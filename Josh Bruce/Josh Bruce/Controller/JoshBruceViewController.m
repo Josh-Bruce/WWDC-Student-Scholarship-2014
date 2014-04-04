@@ -7,9 +7,11 @@
 //
 
 #import "JoshBruceViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface JoshBruceViewController ()
-
+@property (weak, nonatomic) IBOutlet UIView *welcomeView;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @end
 
 @implementation JoshBruceViewController
@@ -17,18 +19,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Add a slight corner radius to the welcome view
+    self.welcomeView.layer.cornerRadius = 10.0;
+    self.welcomeView.layer.masksToBounds = YES;
+    
+    // Add a rounded effect to the profile image
+    self.profileImageView.layer.cornerRadius = 37.5;
+    self.profileImageView.layer.masksToBounds = YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (IBAction)swipeToContinue:(UISwipeGestureRecognizer *)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSLog(@"Swiped");
 }
-*/
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 
 @end
