@@ -19,6 +19,7 @@
 		203916D318EEEB8B00E87B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916BB18EEEB8B00E87B8C /* UIKit.framework */; };
 		203916DB18EEEB8B00E87B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 203916D918EEEB8B00E87B8C /* InfoPlist.strings */; };
 		203916DD18EEEB8B00E87B8C /* Josh_BruceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916DC18EEEB8B00E87B8C /* Josh_BruceTests.m */; };
+		203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203916E918EEECE100E87B8C /* iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		203916D818EEEB8B00E87B8C /* Josh BruceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Josh BruceTests-Info.plist"; sourceTree = "<group>"; };
 		203916DA18EEEB8B00E87B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		203916DC18EEEB8B00E87B8C /* Josh_BruceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Josh_BruceTests.m; sourceTree = "<group>"; };
+		203916E918EEECE100E87B8C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				203916B518EEEB8B00E87B8C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		203916B518EEEB8B00E87B8C /* Products */ = {
 			isa = PBXGroup;
@@ -107,10 +110,11 @@
 		203916BD18EEEB8B00E87B8C /* Josh Bruce */ = {
 			isa = PBXGroup;
 			children = (
-				203916C618EEEB8B00E87B8C /* JoshBruceAppDelegate.h */,
-				203916C718EEEB8B00E87B8C /* JoshBruceAppDelegate.m */,
 				203916C918EEEB8B00E87B8C /* Images.xcassets */,
+				203916E618EEECA100E87B8C /* Controller */,
+				203916E718EEECA600E87B8C /* Model */,
 				203916BE18EEEB8B00E87B8C /* Supporting Files */,
+				203916E818EEECA900E87B8C /* View */,
 			);
 			path = "Josh Bruce";
 			sourceTree = "<group>";
@@ -118,6 +122,8 @@
 		203916BE18EEEB8B00E87B8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				203916C618EEEB8B00E87B8C /* JoshBruceAppDelegate.h */,
+				203916C718EEEB8B00E87B8C /* JoshBruceAppDelegate.m */,
 				203916BF18EEEB8B00E87B8C /* Josh Bruce-Info.plist */,
 				203916C018EEEB8B00E87B8C /* InfoPlist.strings */,
 				203916C318EEEB8B00E87B8C /* main.m */,
@@ -142,6 +148,28 @@
 				203916D918EEEB8B00E87B8C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		203916E618EEECA100E87B8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		203916E718EEECA600E87B8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		203916E818EEECA900E87B8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				203916E918EEECE100E87B8C /* iPhone.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				203916C218EEEB8B00E87B8C /* InfoPlist.strings in Resources */,
+				203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */,
 				203916CA18EEEB8B00E87B8C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
