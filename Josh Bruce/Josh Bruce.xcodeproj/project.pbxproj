@@ -478,6 +478,7 @@
 				203916E218EEEB8B00E87B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		203916E318EEEB8B00E87B8C /* Build configuration list for PBXNativeTarget "Josh BruceTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +487,7 @@
 				203916E518EEEB8B00E87B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

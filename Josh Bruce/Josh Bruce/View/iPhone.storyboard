@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Josh Bruce View Controller-->
+        <!--Josh Bruce View Controller - Josh Bruce-->
         <scene sceneID="xwH-7P-ngy">
             <objects>
                 <viewController id="Euv-WJ-vib" customClass="JoshBruceViewController" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rwk-Ol-Lxa"/>
+                    <navigationItem key="navigationItem" title="Josh Bruce" id="rwk-Ol-Lxa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQr-8v-wPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
