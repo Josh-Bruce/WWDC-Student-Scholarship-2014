@@ -20,6 +20,7 @@
 		203916DB18EEEB8B00E87B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 203916D918EEEB8B00E87B8C /* InfoPlist.strings */; };
 		203916DD18EEEB8B00E87B8C /* Josh_BruceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916DC18EEEB8B00E87B8C /* Josh_BruceTests.m */; };
 		203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203916E918EEECE100E87B8C /* iPhone.storyboard */; };
+		203916ED18EEED4E00E87B8C /* JoshBruceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		203916DA18EEEB8B00E87B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		203916DC18EEEB8B00E87B8C /* Josh_BruceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Josh_BruceTests.m; sourceTree = "<group>"; };
 		203916E918EEECE100E87B8C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoshBruceViewController.h; sourceTree = "<group>"; };
+		203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoshBruceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		203916E618EEECA100E87B8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */,
+				203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203916ED18EEED4E00E87B8C /* JoshBruceViewController.m in Sources */,
 				203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */,
 				203916C418EEEB8B00E87B8C /* main.m in Sources */,
 			);
