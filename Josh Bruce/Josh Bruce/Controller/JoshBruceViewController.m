@@ -19,6 +19,8 @@
 
 @implementation JoshBruceViewController
 
+#define OVERLAY_POSITION_Y 262.50
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,7 +43,7 @@
 	[UIView animateWithDuration:1.0 animations:^{
 		// First animation is to bring in the main view and fade in
 		CGPoint oldPosition = self.welcomeView.layer.position;
-		CGPoint newPosition = CGPointMake(oldPosition.x, 262.50);
+		CGPoint newPosition = CGPointMake(oldPosition.x, OVERLAY_POSITION_Y);
 		self.welcomeView.layer.position = newPosition;
 		self.welcomeView.alpha = 1.0;
 	} completion:^(BOOL finished) {
@@ -58,7 +60,7 @@
         [UIView animateWithDuration:1.0 animations:^{
             // First animation is to bring in the main view and fade in
             CGPoint oldPosition = self.skillsView.layer.position;
-            CGPoint newPosition = CGPointMake(oldPosition.x, 262.50);
+            CGPoint newPosition = CGPointMake(oldPosition.x, OVERLAY_POSITION_Y);
             self.skillsView.layer.position = newPosition;
             self.skillsView.alpha = 1.0;
         } completion:^(BOOL finished) {

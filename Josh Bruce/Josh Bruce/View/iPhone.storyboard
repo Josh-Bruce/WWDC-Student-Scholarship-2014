@@ -171,19 +171,132 @@
                                             <constraint firstAttribute="width" constant="320" id="Qa7-1z-VZ1"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oor-Nf-bBP">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLb-G5-01g" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Josh Bruce's Technical Skills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="168" translatesAutoresizingMaskIntoConstraints="NO" id="817-h0-MXg">
+                                                        <rect key="frame" x="46" y="20" width="168" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some of Josh's technical skills include Objective-C, Java, PHP, HTML5, CSS, JavaScript, MySQL and various others." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="EvY-GW-Gui">
+                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO5-LK-H7q">
+                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uy-wk-lxO">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-Fh-gqa" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Josh Bruce's Technical Skills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="168" translatesAutoresizingMaskIntoConstraints="NO" id="db0-Fs-w2x">
+                                                        <rect key="frame" x="46" y="20" width="168" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some of Josh's technical skills include Objective-C, Java, PHP, HTML5, CSS, JavaScript, MySQL and various others." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="v69-rm-G6i">
+                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLT-AO-48W">
+                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="adB-Hw-u9c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLS-xb-MF5">
+                                        <rect key="frame" x="1280" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFM-Gw-3Bs" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Josh Bruce's Technical Skills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="168" translatesAutoresizingMaskIntoConstraints="NO" id="8vf-fT-lL3">
+                                                        <rect key="frame" x="46" y="20" width="168" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some of Josh's technical skills include Objective-C, Java, PHP, HTML5, CSS, JavaScript, MySQL and various others." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="pQv-VQ-OUk">
+                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Df-Wo-0xX">
+                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="g9N-2r-Leq" firstAttribute="centerY" secondItem="Dmr-oz-cyc" secondAttribute="centerY" id="0h1-I8-BMn"/>
                                     <constraint firstItem="lBS-lV-Otr" firstAttribute="bottom" secondItem="g9N-2r-Leq" secondAttribute="bottom" id="0mM-wd-zDf"/>
                                     <constraint firstAttribute="trailing" secondItem="Klk-x7-K4a" secondAttribute="trailing" id="6nk-2g-hLa"/>
                                     <constraint firstItem="Klk-x7-K4a" firstAttribute="top" secondItem="g9N-2r-Leq" secondAttribute="top" id="9RR-WR-Uzn"/>
+                                    <constraint firstItem="oor-Nf-bBP" firstAttribute="bottom" secondItem="lBS-lV-Otr" secondAttribute="bottom" id="CSb-08-qp7"/>
+                                    <constraint firstItem="9uy-wk-lxO" firstAttribute="leading" secondItem="oor-Nf-bBP" secondAttribute="trailing" id="CgY-MW-VCB"/>
+                                    <constraint firstItem="9uy-wk-lxO" firstAttribute="top" secondItem="oor-Nf-bBP" secondAttribute="top" id="JU4-eS-luu"/>
                                     <constraint firstItem="Klk-x7-K4a" firstAttribute="leading" secondItem="g9N-2r-Leq" secondAttribute="leading" id="MAp-Xc-KgM"/>
                                     <constraint firstAttribute="trailing" secondItem="g9N-2r-Leq" secondAttribute="trailing" constant="1280" id="SDV-yz-RXF"/>
+                                    <constraint firstItem="nLS-xb-MF5" firstAttribute="trailing" secondItem="Klk-x7-K4a" secondAttribute="trailing" id="U1H-I6-7Zk"/>
+                                    <constraint firstItem="nLS-xb-MF5" firstAttribute="leading" secondItem="9uy-wk-lxO" secondAttribute="trailing" id="UhZ-op-g0p"/>
                                     <constraint firstItem="lBS-lV-Otr" firstAttribute="leading" secondItem="g9N-2r-Leq" secondAttribute="trailing" id="YPJ-UH-iPn"/>
                                     <constraint firstAttribute="bottom" secondItem="g9N-2r-Leq" secondAttribute="bottom" id="af2-6g-RXR"/>
+                                    <constraint firstItem="nLS-xb-MF5" firstAttribute="bottom" secondItem="9uy-wk-lxO" secondAttribute="bottom" id="cE2-R6-fSE"/>
+                                    <constraint firstItem="oor-Nf-bBP" firstAttribute="centerX" secondItem="Klk-x7-K4a" secondAttribute="centerX" id="eYU-xz-sq5"/>
                                     <constraint firstItem="g9N-2r-Leq" firstAttribute="leading" secondItem="Dmr-oz-cyc" secondAttribute="leading" id="i4H-M0-7tS"/>
+                                    <constraint firstItem="nLS-xb-MF5" firstAttribute="top" secondItem="9uy-wk-lxO" secondAttribute="top" id="k7G-EE-FtC"/>
                                     <constraint firstItem="g9N-2r-Leq" firstAttribute="top" secondItem="Dmr-oz-cyc" secondAttribute="top" id="krC-zW-8vW"/>
+                                    <constraint firstItem="9uy-wk-lxO" firstAttribute="bottom" secondItem="oor-Nf-bBP" secondAttribute="bottom" id="lnI-sI-lbs"/>
+                                    <constraint firstItem="oor-Nf-bBP" firstAttribute="leading" secondItem="lBS-lV-Otr" secondAttribute="trailing" id="ml2-tG-Z9r"/>
                                     <constraint firstItem="lBS-lV-Otr" firstAttribute="top" secondItem="g9N-2r-Leq" secondAttribute="top" id="nTT-KQ-dOk"/>
+                                    <constraint firstItem="oor-Nf-bBP" firstAttribute="top" secondItem="lBS-lV-Otr" secondAttribute="top" id="qkk-di-DiC"/>
                                     <constraint firstItem="Klk-x7-K4a" firstAttribute="bottom" secondItem="g9N-2r-Leq" secondAttribute="bottom" id="vDw-TV-VkC"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
