@@ -13,6 +13,12 @@
 		2032D57118F19B6300890505 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D57018F19B6300890505 /* MenuViewController.m */; };
 		2032D58718F1A14A00890505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2032D58618F1A14A00890505 /* Images.xcassets */; };
 		2032D59218F1AB5700890505 /* blured_green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2032D59118F1AB5700890505 /* blured_green.jpg */; };
+		2032D59518F1BE3600890505 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59418F1BE3600890505 /* AboutMeViewController.m */; };
+		2032D59818F1BE4800890505 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59718F1BE4800890505 /* ProjectsViewController.m */; };
+		2032D59B18F1BE5200890505 /* EducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59A18F1BE5200890505 /* EducationViewController.m */; };
+		2032D59E18F1BE5C00890505 /* ProfessionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59D18F1BE5C00890505 /* ProfessionalViewController.m */; };
+		2032D5A118F1BE6B00890505 /* TechnicalSkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D5A018F1BE6B00890505 /* TechnicalSkillsViewController.m */; };
+		2032D5A418F1BE7200890505 /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D5A318F1BE7200890505 /* InterestsViewController.m */; };
 		203916B818EEEB8B00E87B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B718EEEB8B00E87B8C /* Foundation.framework */; };
 		203916BA18EEEB8B00E87B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B918EEEB8B00E87B8C /* CoreGraphics.framework */; };
 		203916BC18EEEB8B00E87B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916BB18EEEB8B00E87B8C /* UIKit.framework */; };
@@ -50,6 +56,18 @@
 		2032D57018F19B6300890505 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		2032D58618F1A14A00890505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2032D59118F1AB5700890505 /* blured_green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blured_green.jpg; sourceTree = "<group>"; };
+		2032D59318F1BE3600890505 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		2032D59418F1BE3600890505 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		2032D59618F1BE4800890505 /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		2032D59718F1BE4800890505 /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		2032D59918F1BE5200890505 /* EducationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationViewController.h; sourceTree = "<group>"; };
+		2032D59A18F1BE5200890505 /* EducationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationViewController.m; sourceTree = "<group>"; };
+		2032D59C18F1BE5C00890505 /* ProfessionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalViewController.h; sourceTree = "<group>"; };
+		2032D59D18F1BE5C00890505 /* ProfessionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalViewController.m; sourceTree = "<group>"; };
+		2032D59F18F1BE6B00890505 /* TechnicalSkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechnicalSkillsViewController.h; sourceTree = "<group>"; };
+		2032D5A018F1BE6B00890505 /* TechnicalSkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechnicalSkillsViewController.m; sourceTree = "<group>"; };
+		2032D5A218F1BE7200890505 /* InterestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestsViewController.h; sourceTree = "<group>"; };
+		2032D5A318F1BE7200890505 /* InterestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
 		203916B418EEEB8B00E87B8C /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		203916B718EEEB8B00E87B8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		203916B918EEEB8B00E87B8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,6 +209,18 @@
 				2020CE6318F17C0200F92142 /* WelcomeViewController.m */,
 				2032D56F18F19B6300890505 /* MenuViewController.h */,
 				2032D57018F19B6300890505 /* MenuViewController.m */,
+				2032D59F18F1BE6B00890505 /* TechnicalSkillsViewController.h */,
+				2032D5A018F1BE6B00890505 /* TechnicalSkillsViewController.m */,
+				2032D5A218F1BE7200890505 /* InterestsViewController.h */,
+				2032D5A318F1BE7200890505 /* InterestsViewController.m */,
+				2032D59918F1BE5200890505 /* EducationViewController.h */,
+				2032D59A18F1BE5200890505 /* EducationViewController.m */,
+				2032D59C18F1BE5C00890505 /* ProfessionalViewController.h */,
+				2032D59D18F1BE5C00890505 /* ProfessionalViewController.m */,
+				2032D59618F1BE4800890505 /* ProjectsViewController.h */,
+				2032D59718F1BE4800890505 /* ProjectsViewController.m */,
+				2032D59318F1BE3600890505 /* AboutMeViewController.h */,
+				2032D59418F1BE3600890505 /* AboutMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,13 +343,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2032D59E18F1BE5C00890505 /* ProfessionalViewController.m in Sources */,
 				203916ED18EEED4E00E87B8C /* JoshBruceViewController.m in Sources */,
 				203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */,
 				203916C418EEEB8B00E87B8C /* main.m in Sources */,
 				2020CE6118F17A5600F92142 /* HomeViewController.m in Sources */,
+				2032D5A418F1BE7200890505 /* InterestsViewController.m in Sources */,
+				2032D59818F1BE4800890505 /* ProjectsViewController.m in Sources */,
+				2032D5A118F1BE6B00890505 /* TechnicalSkillsViewController.m in Sources */,
 				2032D57118F19B6300890505 /* MenuViewController.m in Sources */,
 				2023DE0718F061670042B78B /* RoundedRect.m in Sources */,
+				2032D59518F1BE3600890505 /* AboutMeViewController.m in Sources */,
 				2020CE6418F17C0200F92142 /* WelcomeViewController.m in Sources */,
+				2032D59B18F1BE5200890505 /* EducationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

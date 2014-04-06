@@ -254,7 +254,7 @@
                                     <outlet property="delegate" destination="Q5p-Pr-wkl" id="t8n-xI-hNm"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh Bruce WWDC 2014" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Thg-JA-bf5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh Bruce WWDC 2014" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Thg-JA-bf5">
                                 <rect key="frame" x="123" y="31" width="177" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -555,7 +555,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1143" y="35"/>
+            <point key="canvasLocation" x="1178" y="772"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TPj-4J-adb">
