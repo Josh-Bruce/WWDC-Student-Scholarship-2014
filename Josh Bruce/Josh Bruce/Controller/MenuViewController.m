@@ -63,35 +63,40 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if ([self.menuArray[indexPath.row] isEqualToString:@"About Me"]) {
-		[self performSegueWithIdentifier:@"about me" sender:self];
+		[self performSegueWithIdentifier:@"aboutMe" sender:self];
 	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Projects"]) {
-		[self performSegueWithIdentifier:@"test" sender:self];
+		[self performSegueWithIdentifier:@"projects" sender:self];
+	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Education"]) {
+		[self performSegueWithIdentifier:@"education" sender:self];
+	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Professional"]) {
+		[self performSegueWithIdentifier:@"professional" sender:self];
+	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Technical Skills"]) {
+		[self performSegueWithIdentifier:@"technicalSkills" sender:self];
+	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Interests"]) {
+		[self performSegueWithIdentifier:@"interests" sender:self];
 	}
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	/*
-	 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-	 {
-	 // Create an instance of our custom ticket cell
-	 TicketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ticket cell" forIndexPath:indexPath];
-	 
-	 // Get the ticket at index
-	 NSDictionary *ticket = self.ticketsForUser[indexPath.row];
-	 
-	 // Populate the cell with data
-	 cell.ticketTitleLabel.text = [ticket valueForKeyPath:@"title"];
-	 cell.ticketTypeLabel.text = [ticket valueForKeyPath:@"category.ticket_category"];
-	 cell.ticketPriorityLabel.text = [NSString stringWithFormat:@"Priority: %@", [ticket valueForKeyPath:@"priority"]];
-	 cell.ticketDescriptionTextView.text = [ticket valueForKeyPath:@"description"];
-	 
-	 return cell;
-	 }*/
-	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menu item" forIndexPath:indexPath];
 	
-	cell.textLabel.text = self.menuArray[indexPath.row];
+	NSString *cellText = self.menuArray[indexPath.row];
+	cell.textLabel.text = cellText;
+	
+	if ([cellText isEqualToString:@"About Me"]) {
+		cell.imageView.image = [UIImage imageNamed:@"about_me"];
+	} else if ([cellText isEqualToString:@"Projects"]) {
+		cell.imageView.image = [UIImage imageNamed:@"projects"];
+	} else if ([cellText isEqualToString:@"Education"]) {
+		cell.imageView.image = [UIImage imageNamed:@"education"];
+	} else if ([cellText isEqualToString:@"Professional"]) {
+		cell.imageView.image = [UIImage imageNamed:@"professional"];
+	} else if ([cellText isEqualToString:@"Technical Skills"]) {
+		cell.imageView.image = [UIImage imageNamed:@"technical_skills"];
+	} else if ([cellText isEqualToString:@"Interests"]) {
+		cell.imageView.image = [UIImage imageNamed:@"interests"];
+	}
 	
 	UIView *selectionColor = [[UIView alloc] init];
     selectionColor.backgroundColor = [UIColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.1];

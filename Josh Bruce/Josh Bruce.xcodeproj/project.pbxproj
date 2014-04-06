@@ -170,12 +170,12 @@
 		203916BE18EEEB8B00E87B8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				203916C018EEEB8B00E87B8C /* InfoPlist.strings */,
+				203916BF18EEEB8B00E87B8C /* Josh Bruce-Info.plist */,
+				203916C518EEEB8B00E87B8C /* Josh Bruce-Prefix.pch */,
 				203916C618EEEB8B00E87B8C /* JoshBruceAppDelegate.h */,
 				203916C718EEEB8B00E87B8C /* JoshBruceAppDelegate.m */,
-				203916BF18EEEB8B00E87B8C /* Josh Bruce-Info.plist */,
-				203916C018EEEB8B00E87B8C /* InfoPlist.strings */,
 				203916C318EEEB8B00E87B8C /* main.m */,
-				203916C518EEEB8B00E87B8C /* Josh Bruce-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,26 +201,26 @@
 		203916E618EEECA100E87B8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2020CE5F18F17A5600F92142 /* HomeViewController.h */,
-				2020CE6018F17A5600F92142 /* HomeViewController.m */,
-				203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */,
-				203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */,
-				2020CE6218F17C0200F92142 /* WelcomeViewController.h */,
-				2020CE6318F17C0200F92142 /* WelcomeViewController.m */,
-				2032D56F18F19B6300890505 /* MenuViewController.h */,
-				2032D57018F19B6300890505 /* MenuViewController.m */,
-				2032D59F18F1BE6B00890505 /* TechnicalSkillsViewController.h */,
-				2032D5A018F1BE6B00890505 /* TechnicalSkillsViewController.m */,
-				2032D5A218F1BE7200890505 /* InterestsViewController.h */,
-				2032D5A318F1BE7200890505 /* InterestsViewController.m */,
+				2032D59318F1BE3600890505 /* AboutMeViewController.h */,
+				2032D59418F1BE3600890505 /* AboutMeViewController.m */,
 				2032D59918F1BE5200890505 /* EducationViewController.h */,
 				2032D59A18F1BE5200890505 /* EducationViewController.m */,
+				2020CE5F18F17A5600F92142 /* HomeViewController.h */,
+				2020CE6018F17A5600F92142 /* HomeViewController.m */,
+				2032D5A218F1BE7200890505 /* InterestsViewController.h */,
+				2032D5A318F1BE7200890505 /* InterestsViewController.m */,
+				203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */,
+				203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */,
+				2032D56F18F19B6300890505 /* MenuViewController.h */,
+				2032D57018F19B6300890505 /* MenuViewController.m */,
 				2032D59C18F1BE5C00890505 /* ProfessionalViewController.h */,
 				2032D59D18F1BE5C00890505 /* ProfessionalViewController.m */,
 				2032D59618F1BE4800890505 /* ProjectsViewController.h */,
 				2032D59718F1BE4800890505 /* ProjectsViewController.m */,
-				2032D59318F1BE3600890505 /* AboutMeViewController.h */,
-				2032D59418F1BE3600890505 /* AboutMeViewController.m */,
+				2032D59F18F1BE6B00890505 /* TechnicalSkillsViewController.h */,
+				2032D5A018F1BE6B00890505 /* TechnicalSkillsViewController.m */,
+				2020CE6218F17C0200F92142 /* WelcomeViewController.h */,
+				2020CE6318F17C0200F92142 /* WelcomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
