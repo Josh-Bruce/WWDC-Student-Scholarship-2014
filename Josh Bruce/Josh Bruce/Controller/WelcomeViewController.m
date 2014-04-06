@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     // Round the corners of our image
-    self.profileImageView.layer.cornerRadius = 10.0;
+    self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
     self.profileImageView.layer.masksToBounds = YES;
     
     // Animate the welcome view into position when loaded

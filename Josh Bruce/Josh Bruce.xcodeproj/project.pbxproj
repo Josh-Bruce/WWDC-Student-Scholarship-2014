@@ -10,13 +10,15 @@
 		2020CE6118F17A5600F92142 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020CE6018F17A5600F92142 /* HomeViewController.m */; };
 		2020CE6418F17C0200F92142 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020CE6318F17C0200F92142 /* WelcomeViewController.m */; };
 		2023DE0718F061670042B78B /* RoundedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2023DE0618F061670042B78B /* RoundedRect.m */; };
+		2032D57118F19B6300890505 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D57018F19B6300890505 /* MenuViewController.m */; };
+		2032D58718F1A14A00890505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2032D58618F1A14A00890505 /* Images.xcassets */; };
+		2032D59218F1AB5700890505 /* blured_green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2032D59118F1AB5700890505 /* blured_green.jpg */; };
 		203916B818EEEB8B00E87B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B718EEEB8B00E87B8C /* Foundation.framework */; };
 		203916BA18EEEB8B00E87B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B918EEEB8B00E87B8C /* CoreGraphics.framework */; };
 		203916BC18EEEB8B00E87B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916BB18EEEB8B00E87B8C /* UIKit.framework */; };
 		203916C218EEEB8B00E87B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 203916C018EEEB8B00E87B8C /* InfoPlist.strings */; };
 		203916C418EEEB8B00E87B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916C318EEEB8B00E87B8C /* main.m */; };
 		203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916C718EEEB8B00E87B8C /* JoshBruceAppDelegate.m */; };
-		203916CA18EEEB8B00E87B8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203916C918EEEB8B00E87B8C /* Images.xcassets */; };
 		203916D118EEEB8B00E87B8C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916D018EEEB8B00E87B8C /* XCTest.framework */; };
 		203916D218EEEB8B00E87B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B718EEEB8B00E87B8C /* Foundation.framework */; };
 		203916D318EEEB8B00E87B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916BB18EEEB8B00E87B8C /* UIKit.framework */; };
@@ -44,6 +46,10 @@
 		2020CE6318F17C0200F92142 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		2023DE0518F061660042B78B /* RoundedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedRect.h; sourceTree = "<group>"; };
 		2023DE0618F061670042B78B /* RoundedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRect.m; sourceTree = "<group>"; };
+		2032D56F18F19B6300890505 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2032D57018F19B6300890505 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2032D58618F1A14A00890505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2032D59118F1AB5700890505 /* blured_green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blured_green.jpg; sourceTree = "<group>"; };
 		203916B418EEEB8B00E87B8C /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		203916B718EEEB8B00E87B8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		203916B918EEEB8B00E87B8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +60,6 @@
 		203916C518EEEB8B00E87B8C /* Josh Bruce-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Josh Bruce-Prefix.pch"; sourceTree = "<group>"; };
 		203916C618EEEB8B00E87B8C /* JoshBruceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JoshBruceAppDelegate.h; sourceTree = "<group>"; };
 		203916C718EEEB8B00E87B8C /* JoshBruceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoshBruceAppDelegate.m; sourceTree = "<group>"; };
-		203916C918EEEB8B00E87B8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		203916CF18EEEB8B00E87B8C /* Josh BruceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Josh BruceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		203916D018EEEB8B00E87B8C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		203916D818EEEB8B00E87B8C /* Josh BruceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Josh BruceTests-Info.plist"; sourceTree = "<group>"; };
@@ -91,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2032D59018F1AB1800890505 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2032D59118F1AB5700890505 /* blured_green.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		203916AB18EEEB8B00E87B8C = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +139,8 @@
 		203916BD18EEEB8B00E87B8C /* Josh Bruce */ = {
 			isa = PBXGroup;
 			children = (
-				203916C918EEEB8B00E87B8C /* Images.xcassets */,
+				2032D58618F1A14A00890505 /* Images.xcassets */,
+				2032D59018F1AB1800890505 /* Assets */,
 				203916E618EEECA100E87B8C /* Controller */,
 				203916E718EEECA600E87B8C /* Model */,
 				203916BE18EEEB8B00E87B8C /* Supporting Files */,
@@ -175,6 +189,8 @@
 				203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */,
 				2020CE6218F17C0200F92142 /* WelcomeViewController.h */,
 				2020CE6318F17C0200F92142 /* WelcomeViewController.m */,
+				2032D56F18F19B6300890505 /* MenuViewController.h */,
+				2032D57018F19B6300890505 /* MenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,9 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2032D58718F1A14A00890505 /* Images.xcassets in Resources */,
+				2032D59218F1AB5700890505 /* blured_green.jpg in Resources */,
 				203916C218EEEB8B00E87B8C /* InfoPlist.strings in Resources */,
 				203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */,
-				203916CA18EEEB8B00E87B8C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +317,7 @@
 				203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */,
 				203916C418EEEB8B00E87B8C /* main.m in Sources */,
 				2020CE6118F17A5600F92142 /* HomeViewController.m in Sources */,
+				2032D57118F19B6300890505 /* MenuViewController.m in Sources */,
 				2023DE0718F061670042B78B /* RoundedRect.m in Sources */,
 				2020CE6418F17C0200F92142 /* WelcomeViewController.m in Sources */,
 			);
