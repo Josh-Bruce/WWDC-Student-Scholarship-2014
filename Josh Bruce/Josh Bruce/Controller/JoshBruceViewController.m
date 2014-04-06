@@ -19,7 +19,7 @@
 
 @implementation JoshBruceViewController
 
-#define OVERLAY_POSITION_Y 262.50
+#define OVERLAY_POSITION_Y 284
 
 - (void)viewDidLoad
 {
@@ -70,6 +70,11 @@
             }];
         }];
     }
+}
+
+- (IBAction)swipeDownReturnHome:(UISwipeGestureRecognizer *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle

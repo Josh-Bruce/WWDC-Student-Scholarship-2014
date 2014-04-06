@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2020CE6118F17A5600F92142 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020CE6018F17A5600F92142 /* HomeViewController.m */; };
+		2020CE6418F17C0200F92142 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2020CE6318F17C0200F92142 /* WelcomeViewController.m */; };
 		2023DE0718F061670042B78B /* RoundedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2023DE0618F061670042B78B /* RoundedRect.m */; };
 		203916B818EEEB8B00E87B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B718EEEB8B00E87B8C /* Foundation.framework */; };
 		203916BA18EEEB8B00E87B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203916B918EEEB8B00E87B8C /* CoreGraphics.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2020CE5F18F17A5600F92142 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2020CE6018F17A5600F92142 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2020CE6218F17C0200F92142 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		2020CE6318F17C0200F92142 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		2023DE0518F061660042B78B /* RoundedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedRect.h; sourceTree = "<group>"; };
 		2023DE0618F061670042B78B /* RoundedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRect.m; sourceTree = "<group>"; };
 		203916B418EEEB8B00E87B8C /* Josh Bruce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Josh Bruce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +169,12 @@
 		203916E618EEECA100E87B8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2020CE5F18F17A5600F92142 /* HomeViewController.h */,
+				2020CE6018F17A5600F92142 /* HomeViewController.m */,
 				203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */,
 				203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */,
+				2020CE6218F17C0200F92142 /* WelcomeViewController.h */,
+				2020CE6318F17C0200F92142 /* WelcomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,7 +299,9 @@
 				203916ED18EEED4E00E87B8C /* JoshBruceViewController.m in Sources */,
 				203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */,
 				203916C418EEEB8B00E87B8C /* main.m in Sources */,
+				2020CE6118F17A5600F92142 /* HomeViewController.m in Sources */,
 				2023DE0718F061670042B78B /* RoundedRect.m in Sources */,
+				2020CE6418F17C0200F92142 /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
