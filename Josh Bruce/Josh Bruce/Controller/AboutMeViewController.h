@@ -10,4 +10,6 @@
 
 @interface AboutMeViewController : UIViewController
 
+@property (nonatomic, weak) NSString *itemToView;
+
 @end

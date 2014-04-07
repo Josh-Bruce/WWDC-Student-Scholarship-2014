@@ -47,6 +47,10 @@
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
+		
+	if ([self.itemToView isEqualToString:@"location"]) {
+		[self.scrollView scrollRectToVisible:CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.width) animated:YES];
+	}
 	
 	// Slide in and alpha in the views
 	if (self.ageView.alpha != ALPHA_FINISH) {
@@ -64,6 +68,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+	// Keep the swipe to continue on the screen and centred
     CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.ageSwipeToContinue.layer.position.y);
     self.ageSwipeToContinue.layer.position = newPosition;
     
@@ -74,6 +79,7 @@
 			self.locationView.layer.position = newPosition;
 			self.locationView.alpha = ALPHA_FINISH;
 		} completion:^(BOOL finished) {
+			// Once we have faded in the view, add location of where I live on the map and zoom to that position
 			MKPointAnnotation *myLocation = [[MKPointAnnotation alloc] init];
 			myLocation.coordinate = CLLocationCoordinate2DMake(LOCATION_LATITUDE, LOCATION_LONGITUDE);
 			myLocation.title = @"Josh Bruce's Home";
