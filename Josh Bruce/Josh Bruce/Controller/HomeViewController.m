@@ -51,6 +51,28 @@
     }];
 }
 
+- (IBAction)dragUp:(UIPanGestureRecognizer *)sender
+{
+    NSLog(@"%@", sender);
+    CGPoint translation = [sender translationInView:self.view];
+    
+    sender.view.center = CGPointMake(sender.view.center.x, sender.view.center.y + translation.y);
+    
+    [sender setTranslation:CGPointMake(0, 0) inView:self.view];
+}
+
+//- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    UITouch *touch = [touches anyObject];
+//    
+//    // If the touch was in the placardView, move the placardView to its location
+//    if ([touch view] == self.overlayTutorial) {
+//        CGPoint location = [touch locationInView:self.view];
+//        self.overlayTutorial.center = location;
+//        return;
+//    }
+//}
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
