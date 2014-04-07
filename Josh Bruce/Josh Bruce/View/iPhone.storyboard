@@ -764,8 +764,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Older..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z8h-xM-xHI">
@@ -798,7 +798,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="oRJ-R4-WYp" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Living in the UK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VVF-bR-aHy">
