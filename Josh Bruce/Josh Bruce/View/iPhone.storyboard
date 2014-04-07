@@ -435,9 +435,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyY-oq-1vH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="58u-H0-a2t" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="cjB-kV-ElY">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="wFY-PN-0oy" id="j34-pY-ck7"/>
+                        <segue destination="58u-H0-a2t" kind="unwind" identifier="unwindInterests" unwindAction="unwindFromSwipeUpGesture:" id="pJZ-ae-mTR"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -472,7 +473,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vsb-EU-HQJ">
                                         <rect key="frame" x="20" y="255" width="220" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Josh Bruce is a 2nd year Computer Science undergraduate studying at Plymouth University in the UK. Josh has a love for tennis, programming and Apple, developing on iOS since 2011.</string>
+                                        <string key="text">Josh Bruce is a 2nd year Computer Science undergraduate studying at the University of Plymouth in the UK. Josh has a love for tennis, programming and Apple, developing on iOS since 2011.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -783,7 +784,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0GT-6x-YUp">
+                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0GT-6x-YUp">
                                                 <rect key="frame" x="73" y="514" width="175" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -807,7 +808,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh was born on the 2nd February 1994, making him the grand age of 20!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tdM-G2-fbZ">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh is currently living in Plymouth with his girlfriend and studying at the University of Plymouth in the UK." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tdM-G2-fbZ">
                                                         <rect key="frame" x="20" y="255" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -849,9 +850,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YS-Rp-JSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dgn-vB-eAd" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="vmi-0G-wUA">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="I3h-P3-8oX" id="WUU-Oz-6w3"/>
+                        <segue destination="Dgn-vB-eAd" kind="unwind" identifier="unwindAboutMe" unwindAction="unwindFromSwipeUpGesture:" id="kEW-qN-msh"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -891,9 +893,10 @@
                     <size key="freeformSize" width="960" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUQ-jp-pfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="raa-0F-EVS" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="pGU-3y-mqy">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="eLd-ss-GfK" id="b8r-OJ-NJZ"/>
+                        <segue destination="raa-0F-EVS" kind="unwind" identifier="unwindProjects" unwindAction="unwindFromSwipeUpGesture:" id="W6z-bY-Grc"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -933,9 +936,10 @@
                     <size key="freeformSize" width="960" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnV-AO-5RF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wvf-Jl-4oH" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="rlw-Yh-Gqe">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="Y91-jb-hwl" id="NlB-KG-H5v"/>
+                        <segue destination="Wvf-Jl-4oH" kind="unwind" identifier="unwindEducation" unwindAction="unwindFromSwipeUpGesture:" id="w5J-ZL-3aQ"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -975,9 +979,10 @@
                     <size key="freeformSize" width="960" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0L-qn-qcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="71u-ct-ub3" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="cfr-mt-5wd">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="Odr-ka-R8G" id="1r4-vt-RZt"/>
+                        <segue destination="71u-ct-ub3" kind="unwind" identifier="unwindTechnicalSkills" unwindAction="unwindFromSwipeUpGesture:" id="cnY-vh-2Tl"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1017,9 +1022,10 @@
                     <size key="freeformSize" width="960" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuo-sb-2eG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3j1-8f-T8c" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="up" id="jBw-H3-XZ1">
                     <connections>
-                        <action selector="swipeUpMainMenu:" destination="WhN-dz-ako" id="4aT-hx-mfR"/>
+                        <segue destination="3j1-8f-T8c" kind="unwind" identifier="unwindProfessional" unwindAction="unwindFromSwipeUpGesture:" id="W7F-ov-jnr"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

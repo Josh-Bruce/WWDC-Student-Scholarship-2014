@@ -44,6 +44,24 @@
     self.locationMapView.layer.masksToBounds = YES;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	// Slide in and alpha in the views
+	if (self.ageView.alpha != ALPHA_FINISH) {
+		[UIView animateWithDuration:ANIMATION_DURATION animations:^{
+            CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
+			self.ageView.layer.position = newPosition;
+			self.ageView.alpha = ALPHA_FINISH;
+		} completion:^(BOOL finished) {
+            [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+				self.ageSwipeToContinue.alpha = ALPHA_FINISH;
+			}];
+        }];
+	}
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.ageSwipeToContinue.layer.position.y);
@@ -63,11 +81,6 @@
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
     }
-}
-
-- (IBAction)swipeUpMainMenu:(UISwipeGestureRecognizer *)sender
-{
-	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle

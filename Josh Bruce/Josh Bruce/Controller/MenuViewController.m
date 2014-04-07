@@ -105,6 +105,11 @@
 	return cell;
 }
 
+- (IBAction)unwindFromSwipeUpGesture:(UIStoryboardSegue *)segue
+{
+	// Allows for presented views to unwind from the storyboard with the gesture
+}
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
