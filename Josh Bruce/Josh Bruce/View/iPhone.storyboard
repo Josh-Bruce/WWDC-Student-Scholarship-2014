@@ -363,13 +363,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cHy-nr-ekH">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -397,13 +390,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DSD-08-9bg">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -425,12 +411,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
-                        <outlet property="appleSwipeToContinue" destination="DSD-08-9bg" id="tuB-h7-xID"/>
                         <outlet property="appleView" destination="icp-T4-gZX" id="MYx-7N-w6b"/>
-                        <outlet property="programmingSwipeToContinue" destination="cHy-nr-ekH" id="f7f-xx-tdT"/>
                         <outlet property="programmingView" destination="QaY-hZ-Vak" id="M3Y-GR-BA4"/>
                         <outlet property="scrollView" destination="CCu-lT-4MF" id="khI-Cz-wao"/>
-                        <outlet property="tennisSwipeToContinue" destination="cO2-Hs-bg8" id="sJW-FA-ac9"/>
+                        <outlet property="swipeToContinue" destination="cO2-Hs-bg8" id="xEL-jc-L1x"/>
                         <outlet property="tennisView" destination="4gA-qs-KnN" id="ACO-YA-cNu"/>
                     </connections>
                 </viewController>
