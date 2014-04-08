@@ -10,13 +10,18 @@
 #import "AboutMeViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface MenuViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface MenuViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 @property (strong, nonatomic) NSMutableArray *menuArray;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *tutorialView;
+@property (weak, nonatomic) IBOutlet UIScrollView *tutorialScrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *tutorialPageControl;
 @end
 
 @implementation MenuViewController
+
+#define VIEW_CENTRE_X 160
 
 - (NSMutableArray *)menuArray
 {
@@ -49,6 +54,15 @@
 	
 	// Deselect the previous row
 	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        self.tutorialView.layer.position = CGPointMake(160, 284);
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -104,6 +118,14 @@
     cell.selectedBackgroundView = selectionColor;
 	
 	return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	CGFloat pageWidth = self.tutorialScrollView.frame.size.width; // you need to have a **iVar** with getter for scrollView
+    float fractionalPage = self.tutorialScrollView.contentOffset.x / pageWidth;
+    NSInteger page = lround(fractionalPage);
+    self.tutorialPageControl.currentPage = page;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
