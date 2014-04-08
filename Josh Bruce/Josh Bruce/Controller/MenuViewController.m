@@ -17,11 +17,12 @@
 @property (weak, nonatomic) IBOutlet UIView *tutorialView;
 @property (weak, nonatomic) IBOutlet UIScrollView *tutorialScrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *tutorialPageControl;
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
 @end
 
 @implementation MenuViewController
 
-#define VIEW_CENTRE_X 160
+#define VIEW_CENTRE_X self.view.layer.frame.size.width / 2
 
 - (NSMutableArray *)menuArray
 {
@@ -140,19 +141,35 @@
 - (IBAction)displayOverlay:(UIButton *)sender
 {
     // Display the overlay tutorial again via user input
-    [UIView animateWithDuration:1.0 animations:^{
-        self.tutorialView.layer.position = CGPointMake(160, 284);
+    [UIView animateWithDuration:0.5 animations:^{
+        self.tutorialView.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.0 animations:^{
+            self.tutorialScrollView.layer.position = CGPointMake(160, 284);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.5 animations:^{
+                self.tutorialPageControl.alpha = 1.0;
+                self.dismissButton.alpha = 1.0;
+            }];
+        }];
     }];
 }
 
 - (IBAction)dismissOverlay:(UIButton *)sender
 {
+    // Dismiss our actions before anything else
+    self.tutorialPageControl.alpha = 0.0;
+    self.dismissButton.alpha = 0.0;
+    
     // Dismiss our overlay tutorial from user input
     [UIView animateWithDuration:1.0 animations:^{
-        self.tutorialView.layer.position = CGPointMake(160, 852);
+        self.tutorialScrollView.layer.position = CGPointMake(160, 852);
     } completion:^(BOOL finished) {
         // Reset the position back to the beginning for when the user clicks to view it again.
         [self.tutorialScrollView scrollRectToVisible:CGRectMake(0, 0, 320, 568) animated:NO];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.tutorialView.alpha = 0.0;
+        }];
     }];
 }
 

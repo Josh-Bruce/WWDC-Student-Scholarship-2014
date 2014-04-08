@@ -278,7 +278,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y1L-EA-nM6">
-                                <rect key="frame" x="15" y="516" width="32" height="32"/>
+                                <rect key="frame" x="273" y="516" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,12 +287,12 @@
                                     <action selector="displayOverlay:" destination="Q5p-Pr-wkl" eventType="touchUpInside" id="aQV-Oo-C9V"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="SZR-wt-eZr">
-                                <rect key="frame" x="0.0" y="568" width="960" height="568"/>
+                            <view alpha="0.0" contentMode="scaleToFill" id="SZR-wt-eZr">
+                                <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="fBL-hU-1LR">
-                                        <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
+                                        <rect key="frame" x="0.0" y="568" width="960" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="chF-0G-M8a">
@@ -341,11 +341,11 @@
                                             <outlet property="delegate" destination="Q5p-Pr-wkl" id="PhN-bd-9xn"/>
                                         </connections>
                                     </scrollView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Otu-sM-eF9">
-                                        <rect key="frame" x="141" y="449" width="39" height="37"/>
+                                    <pageControl opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Otu-sM-eF9">
+                                        <rect key="frame" x="141" y="433" width="39" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </pageControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="39a-R8-Mqd">
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="39a-R8-Mqd">
                                         <rect key="frame" x="110" y="498" width="100" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -367,6 +367,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
+                        <outlet property="dismissButton" destination="39a-R8-Mqd" id="cXo-ph-jb8"/>
                         <outlet property="profileImageView" destination="6ox-qJ-GJz" id="bXM-ON-ZRn"/>
                         <outlet property="tableView" destination="nlb-s2-B2n" id="wIN-Ij-4RK"/>
                         <outlet property="tutorialPageControl" destination="Otu-sM-eF9" id="gId-0e-Z2f"/>
@@ -541,7 +542,7 @@
                             </imageView>
                             <view opaque="NO" alpha="0.0" contentMode="scaleToFill" id="epw-lc-aaq" customClass="RoundedRect">
                                 <rect key="frame" x="30" y="50" width="260" height="424"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh Bruce's WWDC 2014 Student Scholarship Application" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uYU-JU-3F8">
                                         <rect key="frame" x="20" y="20" width="220" height="65"/>
@@ -565,7 +566,7 @@
                             </view>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vc4-7I-nFo">
                                 <rect key="frame" x="103" y="509" width="115" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Let's Begin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -881,7 +882,7 @@
                                         <rect key="frame" x="648" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view alpha="0.0" contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
+                                            <view contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -995,6 +996,7 @@
                     <connections>
                         <outlet property="ageSwipeToContinue" destination="G4c-sy-FgM" id="IXf-ZU-i0B"/>
                         <outlet property="ageView" destination="NNJ-Q7-cMW" id="SrA-qQ-VYL"/>
+                        <outlet property="contactView" destination="3wS-Wb-nQE" id="jIc-jd-h2G"/>
                         <outlet property="locationMapView" destination="2b6-CJ-7Jk" id="poS-g7-EJT"/>
                         <outlet property="locationView" destination="oRJ-R4-WYp" id="8bA-90-OrR"/>
                         <outlet property="scrollView" destination="auk-wD-pnD" id="FnU-RK-7DE"/>

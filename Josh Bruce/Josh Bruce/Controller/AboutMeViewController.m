@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *ageView;
 @property (weak, nonatomic) IBOutlet RoundedRect *locationView;
+@property (weak, nonatomic) IBOutlet RoundedRect *contactView;
 @property (weak, nonatomic) IBOutlet UILabel *ageSwipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
 @end
@@ -86,6 +87,12 @@
 			[self.locationMapView addAnnotation:myLocation];
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
+    } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != 1.0) {
+        [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
+			self.contactView.layer.position = newPosition;
+			self.contactView.alpha = ALPHA_FINISH;
+        }];
     }
 }
 
