@@ -893,7 +893,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh is currently living in Plymouth with his girlfriend and studying at the University of Plymouth in the UK." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tdM-G2-fbZ">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="275" width="220" height="130"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
@@ -912,7 +912,7 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -922,12 +922,17 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B22-Jv-JUC">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B22-Jv-JUC">
                                                         <rect key="frame" x="20" y="255" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <string key="text">Josh is currently a 2nd year undergraudtae studying Computer Science at the University of Plymouth. He is thoroughly enjoying himself and on track for a 1st.</string>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uop" id="WX3-O3-xVU">
+                                                        <rect key="frame" x="38" y="105" width="185" height="110"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1000,6 +1005,8 @@
                         <outlet property="locationMapView" destination="2b6-CJ-7Jk" id="poS-g7-EJT"/>
                         <outlet property="locationView" destination="oRJ-R4-WYp" id="8bA-90-OrR"/>
                         <outlet property="scrollView" destination="auk-wD-pnD" id="FnU-RK-7DE"/>
+                        <outlet property="test" destination="UU7-ss-aWZ" id="5eG-Wi-kza"/>
+                        <outlet property="universityView" destination="ICe-gt-raq" id="gtS-fw-xoc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YS-Rp-JSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1327,6 +1334,7 @@
         <image name="projects" width="32" height="32"/>
         <image name="question" width="32" height="32"/>
         <image name="technical" width="48" height="48"/>
+        <image name="uop" width="185" height="110"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

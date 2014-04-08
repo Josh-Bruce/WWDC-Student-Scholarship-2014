@@ -33,6 +33,8 @@
 		203916DD18EEEB8B00E87B8C /* Josh_BruceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916DC18EEEB8B00E87B8C /* Josh_BruceTests.m */; };
 		203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203916E918EEECE100E87B8C /* iPhone.storyboard */; };
 		203916ED18EEED4E00E87B8C /* JoshBruceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */; };
+		203F803918F48474004623A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203F803818F48474004623A7 /* AVFoundation.framework */; };
+		203F803B18F48479004623A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203F803A18F48479004623A7 /* AudioToolbox.framework */; };
 		2044D78B18EF3F4C008926D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2044D78A18EF3F4C008926D6 /* QuartzCore.framework */; };
 		2073986918F29A7C00B54AEC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073986818F29A7C00B54AEC /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +91,8 @@
 		203916E918EEECE100E87B8C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		203916EB18EEED4E00E87B8C /* JoshBruceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoshBruceViewController.h; sourceTree = "<group>"; };
 		203916EC18EEED4E00E87B8C /* JoshBruceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoshBruceViewController.m; sourceTree = "<group>"; };
+		203F803818F48474004623A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		203F803A18F48479004623A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2044D78A18EF3F4C008926D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2073986818F29A7C00B54AEC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -98,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203F803B18F48479004623A7 /* AudioToolbox.framework in Frameworks */,
+				203F803918F48474004623A7 /* AVFoundation.framework in Frameworks */,
 				2073986918F29A7C00B54AEC /* MapKit.framework in Frameworks */,
 				2044D78B18EF3F4C008926D6 /* QuartzCore.framework in Frameworks */,
 				203916BA18EEEB8B00E87B8C /* CoreGraphics.framework in Frameworks */,
@@ -151,6 +157,8 @@
 		203916B618EEEB8B00E87B8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				203F803A18F48479004623A7 /* AudioToolbox.framework */,
+				203F803818F48474004623A7 /* AVFoundation.framework */,
 				2073986818F29A7C00B54AEC /* MapKit.framework */,
 				2044D78A18EF3F4C008926D6 /* QuartzCore.framework */,
 				203916B718EEEB8B00E87B8C /* Foundation.framework */,

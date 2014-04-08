@@ -10,14 +10,17 @@
 #import "RoundedRect.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MapKit/MapKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface AboutMeViewController () <UIScrollViewDelegate>
+@interface AboutMeViewController () <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *ageView;
 @property (weak, nonatomic) IBOutlet RoundedRect *locationView;
+@property (weak, nonatomic) IBOutlet RoundedRect *universityView;
 @property (weak, nonatomic) IBOutlet RoundedRect *contactView;
 @property (weak, nonatomic) IBOutlet UILabel *ageSwipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
+@property (weak, nonatomic) IBOutlet UILabel *test;
 @end
 
 @implementation AboutMeViewController
@@ -48,10 +51,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
-		
-//	if ([self.itemToView isEqualToString:@"location"]) {
-//		[self.scrollView scrollRectToVisible:CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.width) animated:YES];
-//	}
 	
 	// Slide in and alpha in the views
 	if (self.ageView.alpha != ALPHA_FINISH) {
@@ -65,6 +64,38 @@
 			}];
         }];
 	}
+    
+    NSString *string = self.test.text;
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:string];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
+    utterance.rate = 0.25f;
+    
+    
+    AVSpeechSynthesizer *speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    speechSynthesizer.delegate = self;
+    [speechSynthesizer speakUtterance:utterance];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
+willSpeakRangeOfSpeechString:(NSRange)characterRange
+                utterance:(AVSpeechUtterance *)utterance
+{
+    NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
+    [mutableAttributedString addAttribute:NSForegroundColorAttributeName
+                                    value:[UIColor redColor] range:characterRange];
+    self.test.attributedText = mutableAttributedString;
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
+  didStartSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.test.text];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
+ didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.test.text];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -87,6 +118,12 @@
 			[self.locationMapView addAnnotation:myLocation];
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
+    } else if (scrollView.contentOffset.x == 640 && self.universityView.alpha != 1.0) {
+        [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
+			self.universityView.layer.position = newPosition;
+			self.universityView.alpha = ALPHA_FINISH;
+        }];
     } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != 1.0) {
         [UIView animateWithDuration:ANIMATION_DURATION animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
