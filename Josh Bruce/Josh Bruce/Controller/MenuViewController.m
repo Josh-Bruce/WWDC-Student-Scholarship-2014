@@ -60,9 +60,17 @@
 {
     [super viewDidAppear:animated];
     
-    [UIView animateWithDuration:1.0 animations:^{
-        self.tutorialView.layer.position = CGPointMake(160, 284);
-    }];
+    // Only show the tutorial overlay the once and then the user can access this again using the question mark
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"joshbruce_overlay_tutorial"]) {
+        // Animate the overlay tutorial on screen
+        [UIView animateWithDuration:1.0 animations:^{
+            self.tutorialView.layer.position = CGPointMake(160, 284);
+        }];
+        
+        // Save a value to the defaults for the key joshbruce_overlay_tutorial
+        [[NSUserDefaults standardUserDefaults] setValue:@"Shown" forKey:@"joshbruce_overlay_tutorial"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -122,10 +130,30 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	CGFloat pageWidth = self.tutorialScrollView.frame.size.width; // you need to have a **iVar** with getter for scrollView
+    // Calculate which page we are currently on for the page control
+	CGFloat pageWidth = self.tutorialScrollView.frame.size.width;
     float fractionalPage = self.tutorialScrollView.contentOffset.x / pageWidth;
     NSInteger page = lround(fractionalPage);
     self.tutorialPageControl.currentPage = page;
+}
+
+- (IBAction)displayOverlay:(UIButton *)sender
+{
+    // Display the overlay tutorial again via user input
+    [UIView animateWithDuration:1.0 animations:^{
+        self.tutorialView.layer.position = CGPointMake(160, 284);
+    }];
+}
+
+- (IBAction)dismissOverlay:(UIButton *)sender
+{
+    // Dismiss our overlay tutorial from user input
+    [UIView animateWithDuration:1.0 animations:^{
+        self.tutorialView.layer.position = CGPointMake(160, 852);
+    } completion:^(BOOL finished) {
+        // Reset the position back to the beginning for when the user clicks to view it again.
+        [self.tutorialScrollView scrollRectToVisible:CGRectMake(0, 0, 320, 568) animated:NO];
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
