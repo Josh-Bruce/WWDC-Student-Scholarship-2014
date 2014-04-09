@@ -1019,12 +1019,22 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EBC-mJ-qmj">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="239" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">SurfTrack is a web development company co-owned by Josh and a collegue. SurfTrack was launched in 2011 with the aim to deliver great websites to clients. 3 years on and thats what still matters.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7yX-uh-zfS">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="WhN-dz-ako" eventType="touchUpInside" id="29y-Nu-iSf"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1042,7 +1052,7 @@
                                         <rect key="frame" x="320" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="vXq-iU-2CB" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="vXq-iU-2CB" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1053,7 +1063,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1j-Yk-RD8">
-                                                        <rect key="frame" x="20" y="242" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="237" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh is an iOS lecturer on the Udemy platform. Josh's course 'iPhone &amp; iPad Development for Beginners' has been a great success on Udemy, having taught 375+ students with 5 star ratings.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1083,7 +1093,7 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="Azx-G6-bwK" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="Azx-G6-bwK" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1093,12 +1103,27 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh was born on the 2nd February 1994, making him the grand age of 20!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H71-Ak-gmL">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H71-Ak-gmL">
+                                                        <rect key="frame" x="20" y="237" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Josh has created an online community for learning. This community is known as 'The Dev Lounge'. Josh currently has over 1000 subscribers and loves to give back to the community for free.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" id="onS-AV-CrC">
+                                                        <rect key="frame" x="20" y="98" width="220" height="92"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U1r-ZD-LfU">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="WhN-dz-ako" eventType="touchUpInside" id="Bdb-jR-lj9"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1120,11 +1145,25 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josh was born on the 2nd February 1994, making him the grand age of 20!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y1u-Fg-vKS">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="231" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salesx" id="P5h-Sv-9Ns">
+                                                        <rect key="frame" x="20" y="120" width="220" height="56"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rgp-SQ-ZTf">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="WhN-dz-ako" eventType="touchUpInside" id="Oad-In-DcN"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1180,11 +1219,13 @@
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="profile" width="130" height="130"/>
         <image name="question" width="32" height="32"/>
+        <image name="salesx" width="220" height="56"/>
         <image name="swipe_down" width="64" height="96"/>
         <image name="swipe_up" width="64" height="96"/>
         <image name="udemy_course" width="220" height="124"/>
         <image name="uop" width="185" height="110"/>
         <image name="xcode" width="128" height="128"/>
+        <image name="youtube" width="220" height="92"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
