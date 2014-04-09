@@ -13,19 +13,26 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface AboutMeViewController () <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
+@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
+@property (weak, nonatomic) NSString *utteranceString;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *ageView;
+@property (weak, nonatomic) IBOutlet UILabel *ageTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *locationView;
+@property (weak, nonatomic) IBOutlet UILabel *locationTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *universityView;
+@property (weak, nonatomic) IBOutlet UILabel *universityTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *contactView;
-@property (weak, nonatomic) IBOutlet UILabel *ageSwipeToContinue;
+@property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
-@property (weak, nonatomic) IBOutlet UILabel *test;
+@property (weak, nonatomic) UILabel *test;
 @end
 
 @implementation AboutMeViewController
 
-#define VIEW_CENTRE_X 160
+#define VIEW_HEIGHT self.view.layer.frame.size.height
+#define VIEW_WIDTH self.view.layer.frame.size.width
+#define VIEW_CENTRE_X VIEW_WIDTH / 2
 
 #define WELCOME_START_X 160
 #define WELCOME_START_Y 62
@@ -43,9 +50,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
+	// Round the map view
     self.locationMapView.layer.cornerRadius = 10.0;
     self.locationMapView.layer.masksToBounds = YES;
+	
+	// Init our speech synthesizer
+	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    self.speechSynthesizer.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -60,20 +72,48 @@
 			self.ageView.alpha = ALPHA_FINISH;
 		} completion:^(BOOL finished) {
             [UIView animateWithDuration:ANIMATION_DURATION animations:^{
-				self.ageSwipeToContinue.alpha = ALPHA_FINISH;
+				self.swipeToContinue.alpha = ALPHA_FINISH;
 			}];
         }];
 	}
-    
-    NSString *string = self.test.text;
-    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:string];
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
-    utterance.rate = 0.25f;
-    
-    
-    AVSpeechSynthesizer *speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-    speechSynthesizer.delegate = self;
-    [speechSynthesizer speakUtterance:utterance];
+}
+
+- (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString
+{
+	// Init our speech text
+	AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:utteranceString];
+	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
+	speechUtterance.rate = 0.25f;
+	
+	return speechUtterance;
+}
+
+- (IBAction)speakCurrentViewText:(UIButton *)sender
+{
+	// Depending on the current part of the scroll view, speak if the users wants it
+	switch ((int)self.scrollView.contentOffset.x) {
+		case 0:
+			// Set the utterance string
+			self.utteranceString = self.ageTextLabel.text;
+			// Speek
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.test = self.ageTextLabel;
+			break;
+		case 320:
+			// Set the utterance string
+			self.utteranceString = self.locationTextLabel.text;
+			// Speek
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.test = self.locationTextLabel;
+			break;
+		case 640:
+			// Set the utterance string
+			self.utteranceString = self.universityTextLabel.text;
+			// Speek
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.test = self.universityTextLabel;
+			break;
+	}
 }
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
@@ -89,20 +129,20 @@ willSpeakRangeOfSpeechString:(NSRange)characterRange
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
   didStartSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.test.text];
+    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
 }
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
  didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.test.text];
+    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 	// Keep the swipe to continue on the screen and centred
-    CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.ageSwipeToContinue.layer.position.y);
-    self.ageSwipeToContinue.layer.position = newPosition;
+    CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.swipeToContinue.layer.position.y);
+    self.swipeToContinue.layer.position = newPosition;
     
     if (scrollView.contentOffset.x == 320 && self.locationView.alpha != 1.0) {
         // Fade in the location view and set the coordinates of where I live

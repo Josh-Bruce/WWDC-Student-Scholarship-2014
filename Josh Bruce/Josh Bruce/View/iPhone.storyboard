@@ -850,7 +850,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="NNJ-Q7-cMW" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Older" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GFw-1d-k6f">
@@ -865,6 +865,16 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tEO-vZ-84Q">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="Lsb-hX-H1a"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -883,7 +893,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="oRJ-R4-WYp" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Living in the UK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VVF-bR-aHy">
@@ -902,6 +912,16 @@
                                                         <rect key="frame" x="35" y="77" width="190" height="190"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     </mapView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Ht-rB-10P">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="WCk-pz-2tn"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -913,7 +933,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="ICe-gt-raq" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z8h-xM-xHI">
@@ -925,7 +945,7 @@
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B22-Jv-JUC">
                                                         <rect key="frame" x="20" y="255" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently a 2nd year undergraudtae studying Computer Science at the University of Plymouth. He is thoroughly enjoying himself and on track for a 1st.</string>
+                                                        <string key="text">Josh is currently a 2nd year undergraduate studying Computer Science at the University of Plymouth. He is thoroughly enjoying himself and on track for a 1st.</string>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -933,6 +953,16 @@
                                                         <rect key="frame" x="38" y="105" width="185" height="110"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5DU-iU-jTb">
+                                                        <rect key="frame" x="20" y="380" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="Tje-EW-fLn"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -944,7 +974,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="3wS-Wb-nQE" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ozd-wE-w2e">
@@ -999,13 +1029,15 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
-                        <outlet property="ageSwipeToContinue" destination="G4c-sy-FgM" id="IXf-ZU-i0B"/>
+                        <outlet property="ageTextLabel" destination="UU7-ss-aWZ" id="HTF-HM-J6L"/>
                         <outlet property="ageView" destination="NNJ-Q7-cMW" id="SrA-qQ-VYL"/>
                         <outlet property="contactView" destination="3wS-Wb-nQE" id="jIc-jd-h2G"/>
                         <outlet property="locationMapView" destination="2b6-CJ-7Jk" id="poS-g7-EJT"/>
+                        <outlet property="locationTextLabel" destination="tdM-G2-fbZ" id="vBN-32-l1Q"/>
                         <outlet property="locationView" destination="oRJ-R4-WYp" id="8bA-90-OrR"/>
                         <outlet property="scrollView" destination="auk-wD-pnD" id="FnU-RK-7DE"/>
-                        <outlet property="test" destination="UU7-ss-aWZ" id="5eG-Wi-kza"/>
+                        <outlet property="swipeToContinue" destination="G4c-sy-FgM" id="c2F-Pc-kG8"/>
+                        <outlet property="universityTextLabel" destination="B22-Jv-JUC" id="sLa-GR-xmZ"/>
                         <outlet property="universityView" destination="ICe-gt-raq" id="gtS-fw-xoc"/>
                     </connections>
                 </viewController>
@@ -1326,6 +1358,7 @@
     </scenes>
     <resources>
         <image name="apple" width="128" height="128"/>
+        <image name="audio" width="32" height="32"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
         <image name="blured_green.jpg" width="864" height="508"/>
         <image name="blury_background" width="640" height="1136"/>
