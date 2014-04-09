@@ -143,7 +143,7 @@
     CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.swipeToContinue.layer.position.y);
     self.swipeToContinue.layer.position = newPosition;
     
-    if (scrollView.contentOffset.x == 320 && self.locationView.alpha != 1.0) {
+    if (scrollView.contentOffset.x == 320 && self.locationView.alpha != ALPHA_FINISH) {
         // Fade in the location view and set the coordinates of where I live
         [UIView animateWithDuration:ANIMATION_DURATION animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
@@ -157,13 +157,13 @@
 			[self.locationMapView addAnnotation:myLocation];
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
-    } else if (scrollView.contentOffset.x == 640 && self.universityView.alpha != 1.0) {
+    } else if (scrollView.contentOffset.x == 640 && self.universityView.alpha != ALPHA_FINISH) {
         [UIView animateWithDuration:ANIMATION_DURATION animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.universityView.layer.position = newPosition;
 			self.universityView.alpha = ALPHA_FINISH;
         }];
-    } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != 1.0) {
+    } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != ALPHA_FINISH) {
         [UIView animateWithDuration:ANIMATION_DURATION animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.contactView.layer.position = newPosition;
