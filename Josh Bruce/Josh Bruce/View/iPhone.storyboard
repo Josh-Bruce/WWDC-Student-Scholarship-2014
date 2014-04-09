@@ -83,6 +83,19 @@
                                                     <view opaque="NO" contentMode="scaleToFill" id="C0u-1B-AKX" customClass="RoundedRect">
                                                         <rect key="frame" x="30" y="75" width="260" height="350"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe_up" id="1xY-HV-lef">
+                                                                <rect key="frame" x="98" y="81" width="64" height="96"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </imageView>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDg-p1-cPo">
+                                                                <rect key="frame" x="94" y="20" width="72" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -95,6 +108,12 @@
                                                     <view contentMode="scaleToFill" id="XDg-DL-uK9" customClass="RoundedRect">
                                                         <rect key="frame" x="30" y="75" width="260" height="350"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe_down" id="MF0-tF-Mku">
+                                                                <rect key="frame" x="98" y="82" width="64" height="96"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </imageView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -107,6 +126,12 @@
                                                     <view contentMode="scaleToFill" id="ebM-Ry-zWz" customClass="RoundedRect">
                                                         <rect key="frame" x="30" y="75" width="260" height="350"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontal_swipe" id="FWm-zo-8y6">
+                                                                <rect key="frame" x="66" y="92" width="128" height="64"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </imageView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -582,23 +607,32 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: josh@surftrack.co.uk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gB5-nQ-EHb">
-                                                        <rect key="frame" x="24" y="326" width="212" height="21"/>
+                                                        <rect key="frame" x="24" y="263" width="212" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website: surftrack.co.uk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kLP-j1-M1t">
-                                                        <rect key="frame" x="37" y="355" width="186" height="21"/>
+                                                        <rect key="frame" x="37" y="292" width="186" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter: @Brucey125" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51X-i7-nrT">
-                                                        <rect key="frame" x="52" y="384" width="157" height="21"/>
+                                                        <rect key="frame" x="52" y="321" width="157" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ho-wa-yHs">
+                                                        <rect key="frame" x="51" y="371" width="158" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="Click for Josh's CV">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1121,6 +1155,7 @@
                         <outlet property="surftrackLabelText" destination="EBC-mJ-qmj" id="rTA-wK-3eM"/>
                         <outlet property="surftrackView" destination="hr4-IN-RTP" id="3Kn-wT-lOy"/>
                         <outlet property="swipeToContinue" destination="9sd-3D-ezF" id="QDP-Dm-fkl"/>
+                        <outlet property="udemyImage" destination="Bfo-ap-f3D" id="sXa-QL-C0u"/>
                         <outlet property="udemyLabelText" destination="j1j-Yk-RD8" id="1E5-Mt-WQb"/>
                         <outlet property="udemyView" destination="vXq-iU-2CB" id="78y-bi-i9J"/>
                         <outlet property="youtubeLabelText" destination="H71-Ak-gmL" id="zae-X2-DZQ"/>
@@ -1142,8 +1177,11 @@
         <image name="apple" width="128" height="128"/>
         <image name="audio" width="32" height="32"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
+        <image name="horizontal_swipe" width="128" height="64"/>
         <image name="profile" width="130" height="130"/>
         <image name="question" width="32" height="32"/>
+        <image name="swipe_down" width="64" height="96"/>
+        <image name="swipe_up" width="64" height="96"/>
         <image name="udemy_course" width="220" height="124"/>
         <image name="uop" width="185" height="110"/>
         <image name="xcode" width="128" height="128"/>

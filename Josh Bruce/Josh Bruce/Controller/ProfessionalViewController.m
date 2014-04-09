@@ -32,6 +32,10 @@
 {
     [super viewDidLoad];
 	
+    // Round the udemy image
+    self.udemyImage.layer.cornerRadius = 10.0;
+    self.udemyImage.layer.masksToBounds = YES;
+    
 	// Init our speech synthesizer
 	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
     self.speechSynthesizer.delegate = self;
@@ -104,6 +108,7 @@
 
 - (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance
 {
+    // Create an attributed string to show what is currently being said within the label's text
     NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
     [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:characterRange];
     self.labelText.attributedText = mutableAttributedString;

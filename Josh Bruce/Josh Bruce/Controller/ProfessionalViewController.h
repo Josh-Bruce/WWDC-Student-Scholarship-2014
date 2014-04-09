@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RoundedRect.h"
+#import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface ProfessionalViewController : UIViewController <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
@@ -20,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *surftrackLabelText;
 @property (weak, nonatomic) IBOutlet RoundedRect *udemyView;
 @property (weak, nonatomic) IBOutlet UILabel *udemyLabelText;
+@property (weak, nonatomic) IBOutlet UIImageView *udemyImage;
 @property (weak, nonatomic) IBOutlet RoundedRect *youtubeView;
 @property (weak, nonatomic) IBOutlet UILabel *youtubeLabelText;
 @property (weak, nonatomic) IBOutlet RoundedRect *salesxView;
