@@ -15,6 +15,7 @@
 @interface AboutMeViewController () <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
 @property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
 @property (weak, nonatomic) NSString *utteranceString;
+@property (weak, nonatomic) UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *ageView;
 @property (weak, nonatomic) IBOutlet UILabel *ageTextLabel;
@@ -25,7 +26,6 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *contactView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
-@property (weak, nonatomic) UILabel *test;
 @end
 
 @implementation AboutMeViewController
@@ -95,48 +95,47 @@
 		case 0:
 			// Set the utterance string
 			self.utteranceString = self.ageTextLabel.text;
-			// Speek
+			// Speak
 			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
-			self.test = self.ageTextLabel;
+			self.labelText = self.ageTextLabel;
 			break;
 		case 320:
 			// Set the utterance string
 			self.utteranceString = self.locationTextLabel.text;
-			// Speek
+			// Speak
 			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
-			self.test = self.locationTextLabel;
+			self.labelText = self.locationTextLabel;
 			break;
 		case 640:
 			// Set the utterance string
 			self.utteranceString = self.universityTextLabel.text;
-			// Speek
+			// Speak
 			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
-			self.test = self.universityTextLabel;
+			self.labelText = self.universityTextLabel;
 			break;
 	}
 }
 
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
-willSpeakRangeOfSpeechString:(NSRange)characterRange
-                utterance:(AVSpeechUtterance *)utterance
+#pragma mark AVSpeechSynthesizer Delegate
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance
 {
     NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
-    [mutableAttributedString addAttribute:NSForegroundColorAttributeName
-                                    value:[UIColor redColor] range:characterRange];
-    self.test.attributedText = mutableAttributedString;
+    [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:characterRange];
+    self.labelText.attributedText = mutableAttributedString;
 }
 
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
-  didStartSpeechUtterance:(AVSpeechUtterance *)utterance
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
 }
 
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer
- didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    self.test.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
 }
+
+#pragma mark UIScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

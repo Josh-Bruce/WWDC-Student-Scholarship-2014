@@ -416,12 +416,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GJx-zY-5OG">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="235" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh's love for tennis came at the early age of 7, being inspired by a role model who has helped shape his life today. Roger Federer a great champion on and off the tennis court.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RgI-9a-dYC">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="wFY-PN-0oy" eventType="touchUpInside" id="b53-Cq-wbf"/>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="c9p-if-p68"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -450,12 +461,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z1E-b7-RzC">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="228" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh's programming expirence progressed from creating websites. This was a great starting point and has since been developing iOS applications after buying a MacBook Pro in 2011.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tZO-cf-vE9">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="wFY-PN-0oy" eventType="touchUpInside" id="IVC-UR-wBB"/>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="IzP-1V-grI"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -467,7 +489,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view alpha="0.0" contentMode="scaleToFill" id="icp-T4-gZX" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                                <rect key="frame" x="30" y="49" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MnQ-I2-7PC">
@@ -477,14 +499,25 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W5h-uC-hsS">
-                                                        <rect key="frame" x="20" y="255" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh's passion for Apple is unmeasurable, having been a big Apple follower and supporter of their products. Josh ventured into purchasing his own MacBook Pro with money earnt from Web Development in 2011.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oHA-6q-5ir">
+                                                        <rect key="frame" x="20" y="379" width="32" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="audio">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="wFY-PN-0oy" eventType="touchUpInside" id="Kra-bd-0Ni"/>
+                                                            <action selector="speakCurrentViewText:" destination="I3h-P3-8oX" eventType="touchUpInside" id="Zep-dV-p02"/>
+                                                        </connections>
+                                                    </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" id="Uc2-kh-6ie">
-                                                        <rect key="frame" x="66" y="78" width="128" height="128"/>
+                                                        <rect key="frame" x="66" y="65" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
@@ -511,10 +544,13 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
+                        <outlet property="appleTextLabel" destination="W5h-uC-hsS" id="Sgy-9q-dav"/>
                         <outlet property="appleView" destination="icp-T4-gZX" id="MYx-7N-w6b"/>
+                        <outlet property="programmingTextLabel" destination="Z1E-b7-RzC" id="Q72-D8-KNB"/>
                         <outlet property="programmingView" destination="QaY-hZ-Vak" id="M3Y-GR-BA4"/>
                         <outlet property="scrollView" destination="CCu-lT-4MF" id="khI-Cz-wao"/>
                         <outlet property="swipeToContinue" destination="cO2-Hs-bg8" id="xEL-jc-L1x"/>
+                        <outlet property="tennisTextLabel" destination="GJx-zY-5OG" id="7JA-ba-eqR"/>
                         <outlet property="tennisView" destination="4gA-qs-KnN" id="ACO-YA-cNu"/>
                     </connections>
                 </viewController>

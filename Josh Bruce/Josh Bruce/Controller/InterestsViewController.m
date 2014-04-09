@@ -8,13 +8,20 @@
 
 #import "InterestsViewController.h"
 #import "RoundedRect.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface InterestsViewController () <UIScrollViewDelegate>
+@interface InterestsViewController () <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
+@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
+@property (weak, nonatomic) NSString *utteranceString;
+@property (weak, nonatomic) UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet RoundedRect *tennisView;
+@property (weak, nonatomic) IBOutlet UILabel *tennisTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *programmingView;
+@property (weak, nonatomic) IBOutlet UILabel *programmingTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *appleView;
+@property (weak, nonatomic) IBOutlet UILabel *appleTextLabel;
 @end
 
 @implementation InterestsViewController
@@ -34,9 +41,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-	
-	
+    
+    // Init our speech synthesizer
+	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    self.speechSynthesizer.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -56,6 +64,65 @@
         }];
 	}
 }
+
+- (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString
+{
+	// Init our speech text
+	AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:utteranceString];
+	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
+	speechUtterance.rate = 0.25f;
+	
+	return speechUtterance;
+}
+
+- (IBAction)speakCurrentViewText:(UIButton *)sender
+{
+    // Depending on the current part of the scroll view, speak if the users wants it
+	switch ((int)self.scrollView.contentOffset.x) {
+		case 0:
+			// Set the utterance string
+			self.utteranceString = self.tennisTextLabel.text;
+			// Speak
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.labelText = self.tennisTextLabel;
+			break;
+		case 320:
+			// Set the utterance string
+			self.utteranceString = self.programmingTextLabel.text;
+			// Speak
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.labelText = self.programmingTextLabel;
+			break;
+		case 640:
+			// Set the utterance string
+			self.utteranceString = self.appleTextLabel.text;
+			// Speak
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.labelText = self.appleTextLabel;
+			break;
+	}
+}
+
+#pragma mark AVSpeechSynthesizer Delegate
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance
+{
+    NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
+    [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:characterRange];
+    self.labelText.attributedText = mutableAttributedString;
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+}
+
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
+{
+    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+}
+
+#pragma mark UIScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
