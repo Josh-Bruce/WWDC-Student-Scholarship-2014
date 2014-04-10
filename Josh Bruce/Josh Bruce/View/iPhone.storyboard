@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="Q5p-Pr-wkl" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZP2-vK-e28">
-                        <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blured_dark.jpg" id="XhQ-yF-pgT">
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="nlb-s2-B2n">
-                                <rect key="frame" x="0.0" y="163" width="320" height="330"/>
+                                <rect key="frame" x="0.0" y="158" width="320" height="330"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -59,9 +59,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y1L-EA-nM6">
-                                <rect key="frame" x="273" y="516" width="32" height="32"/>
+                                <rect key="frame" x="15" y="516" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="question">
+                                <state key="normal" backgroundImage="question">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -69,11 +69,11 @@
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" id="SZR-wt-eZr">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="fBL-hU-1LR">
-                                        <rect key="frame" x="0.0" y="568" width="960" height="568"/>
+                                        <rect key="frame" x="0.0" y="568" width="1280" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="chF-0G-M8a">
@@ -168,17 +168,47 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
+                                            <view contentMode="scaleToFill" id="UFn-mq-FHY">
+                                                <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="Exe-fq-Fr6" customClass="RoundedRect">
+                                                        <rect key="frame" x="30" y="75" width="260" height="350"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio_large" id="iol-Cq-bRl">
+                                                                <rect key="frame" x="73" y="61" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </imageView>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Audio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uta-BW-QQQ">
+                                                                <rect key="frame" x="73" y="20" width="115" height="22"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="While viewing a category, tap the audio button to listen to the text being read to you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IwX-fd-XJM">
+                                                                <rect key="frame" x="20" y="216" width="220" height="114"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
                                         </subviews>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                                <size key="value" width="960" height="568"/>
+                                                <size key="value" width="1280" height="568"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="Q5p-Pr-wkl" id="PhN-bd-9xn"/>
                                         </connections>
                                     </scrollView>
-                                    <pageControl opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Otu-sM-eF9">
+                                    <pageControl opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Otu-sM-eF9">
                                         <rect key="frame" x="141" y="433" width="39" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </pageControl>
@@ -202,7 +232,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="twP-9g-MRR"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="960" height="568"/>
+                    <size key="freeformSize" width="1280" height="568"/>
                     <connections>
                         <outlet property="dismissButton" destination="39a-R8-Mqd" id="cXo-ph-jb8"/>
                         <outlet property="profileImageView" destination="6ox-qJ-GJz" id="bXM-ON-ZRn"/>
@@ -220,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vm8-do-xhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="798"/>
+            <point key="canvasLocation" x="-302" y="796"/>
         </scene>
         <!--Interests View Controller-->
         <scene sceneID="dKP-PB-aXR">
@@ -462,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Asj-sX-Jb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="798"/>
+            <point key="canvasLocation" x="-767" y="796"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TPj-4J-adb">
@@ -481,7 +511,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyx-lJ-ouw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-925" y="798"/>
+            <point key="canvasLocation" x="-1249" y="796"/>
         </scene>
         <!--About Me View Controller-->
         <scene sceneID="NzB-3b-cv8">
@@ -664,6 +694,10 @@
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" id="IZi-pi-gTJ">
+                                                        <rect key="frame" x="65" y="86" width="130" height="130"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1176,9 +1210,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y1u-Fg-vKS">
-                                                        <rect key="frame" x="20" y="236" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="232" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh became a contracted web developer for SalesX after their CEO found one of Josh's YouTube videos incredibly useful to their development of websites.</string>
+                                                        <string key="text">Josh became a contracted web developer for SalesX after their CEO found one of Josh's YouTube videos. It was incredibly useful to their development of websites. Josh has been working alongside them eversince.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1247,6 +1281,7 @@
     <resources>
         <image name="apple" width="128" height="128"/>
         <image name="audio" width="32" height="32"/>
+        <image name="audio_large" width="128" height="128"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="profile" width="130" height="130"/>
