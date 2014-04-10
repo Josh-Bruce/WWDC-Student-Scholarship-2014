@@ -880,6 +880,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="eLd-ss-GfK" eventType="touchUpInside" id="aHc-5Z-ySa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -921,7 +924,14 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="eLd-ss-GfK" eventType="touchUpInside" id="tId-cp-p9D"/>
+                                                        </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloom" id="qBg-PK-lU5">
+                                                        <rect key="frame" x="20" y="80" width="220" height="130"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -955,6 +965,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="eLd-ss-GfK" eventType="touchUpInside" id="EQH-ub-lvp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1000,10 +1013,11 @@
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="960" height="568"/>
+                                        <size key="value" width="1280" height="568"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="delegate" destination="eLd-ss-GfK" id="bh0-LS-9KU"/>
                                     <outletCollection property="gestureRecognizers" destination="pGU-3y-mqy" appends="YES" id="Ejt-0E-bFV"/>
                                 </connections>
                             </scrollView>
@@ -1012,6 +1026,17 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="propertyImage" destination="qBg-PK-lU5" id="0ky-o6-w9b"/>
+                        <outlet property="propertyLabelText" destination="r1y-li-ELe" id="tQo-7i-KbR"/>
+                        <outlet property="propertyView" destination="nht-VW-ZhL" id="aoJ-6X-ryK"/>
+                        <outlet property="referenceitLabelText" destination="vOL-r7-mpD" id="L2a-Ln-zOO"/>
+                        <outlet property="referenceitView" destination="Utl-ND-lLQ" id="K5X-ai-vVH"/>
+                        <outlet property="scrollView" destination="Szd-d8-bmy" id="rBB-Gq-B6R"/>
+                        <outlet property="seoLabelText" destination="Vrc-WE-Abm" id="0ve-dp-2g7"/>
+                        <outlet property="seoView" destination="fPh-V2-k9i" id="6x8-jU-01N"/>
+                        <outlet property="swipeToContinue" destination="Y6z-oj-VfP" id="hKG-1T-adS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUQ-jp-pfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="raa-0F-EVS" userLabel="Exit" sceneMemberID="exit"/>
@@ -1482,6 +1507,7 @@
         <image name="apple" width="128" height="128"/>
         <image name="audio" width="32" height="32"/>
         <image name="audio_large" width="128" height="128"/>
+        <image name="bloom" width="220" height="130"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="profile" width="130" height="130"/>
