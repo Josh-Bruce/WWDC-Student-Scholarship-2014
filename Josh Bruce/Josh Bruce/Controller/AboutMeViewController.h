@@ -7,9 +7,35 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RoundedRect.h"
+#import <QuartzCore/QuartzCore.h>
+#import <MapKit/MapKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface AboutMeViewController : UIViewController
+@interface AboutMeViewController : UIViewController <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
 
+@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
+@property (strong, nonatomic) NSDateFormatter *dateFormatter;
+@property (strong, nonatomic) NSDate *birthday;
+@property (strong, nonatomic) NSTimer *timer;
+@property (weak, nonatomic) NSString *utteranceString;
+@property (weak, nonatomic) UILabel *labelText;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet RoundedRect *ageView;
+@property (weak, nonatomic) IBOutlet UILabel *ageTextLabel;
+@property (weak, nonatomic) IBOutlet RoundedRect *locationView;
+@property (weak, nonatomic) IBOutlet UILabel *locationTextLabel;
+@property (weak, nonatomic) IBOutlet RoundedRect *universityView;
+@property (weak, nonatomic) IBOutlet UILabel *universityTextLabel;
+@property (weak, nonatomic) IBOutlet RoundedRect *contactView;
+@property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
+@property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
+@property (weak, nonatomic) IBOutlet UILabel *years;
+@property (weak, nonatomic) IBOutlet UILabel *months;
+@property (weak, nonatomic) IBOutlet UILabel *days;
+@property (weak, nonatomic) IBOutlet UILabel *hours;
+@property (weak, nonatomic) IBOutlet UILabel *minutes;
+@property (weak, nonatomic) IBOutlet UILabel *seconds;
 @property (nonatomic, weak) NSString *itemToView;
 
 @end
