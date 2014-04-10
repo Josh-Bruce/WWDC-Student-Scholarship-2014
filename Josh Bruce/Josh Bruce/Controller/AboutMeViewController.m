@@ -26,6 +26,12 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *contactView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
+@property (weak, nonatomic) IBOutlet UILabel *years;
+@property (weak, nonatomic) IBOutlet UILabel *months;
+@property (weak, nonatomic) IBOutlet UILabel *days;
+@property (weak, nonatomic) IBOutlet UILabel *hours;
+@property (weak, nonatomic) IBOutlet UILabel *minutes;
+@property (weak, nonatomic) IBOutlet UILabel *seconds;
 @end
 
 @implementation AboutMeViewController
@@ -58,6 +64,10 @@
 	// Init our speech synthesizer
 	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
     self.speechSynthesizer.delegate = self;
+    
+	// Init and start our timing updating
+    [self updateDate];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -76,6 +86,31 @@
 			}];
         }];
 	}
+}
+
+- (void)updateDate
+{
+    // Date format
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy HH:mm:ss"];
+    // My birthday with time of birth
+    NSDate *birthday = [[NSDate alloc] init];
+    birthday = [dateFormatter dateFromString:@"02-02-1994 04:15:34"];
+    
+    // Get the current calendar
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    // Set the unit types that we want
+    unsigned int uintFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    // Get the difference between my birthday and now
+    NSDateComponents *differenceComponents = [calendar components:uintFlags fromDate:birthday toDate:[NSDate date] options:0];
+	
+    // Set the counting labels
+    self.years.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents year]];
+    self.months.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents month]];
+    self.days.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents day]];
+    self.hours.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents hour]];
+    self.minutes.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents minute]];
+    self.seconds.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents second]];
 }
 
 - (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString
