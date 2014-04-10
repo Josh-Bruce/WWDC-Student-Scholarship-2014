@@ -32,6 +32,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *hours;
 @property (weak, nonatomic) IBOutlet UILabel *minutes;
 @property (weak, nonatomic) IBOutlet UILabel *seconds;
+@property (strong, nonatomic) NSDateFormatter *dateFormatter;
+@property (strong, nonatomic) NSDate *birthday;
+@property (strong, nonatomic) NSTimer *timer;
 @end
 
 @implementation AboutMeViewController
@@ -66,8 +69,9 @@
     self.speechSynthesizer.delegate = self;
     
 	// Init and start our timing updating
+	[self initDateForBirthday];
     [self updateDate];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -88,21 +92,33 @@
 	}
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+	
+	// Invalidate the timer once we leave the view
+	[self.timer invalidate];
+}
+
+- (void)initDateForBirthday
+{
+	// Date format
+    self.dateFormatter = [[NSDateFormatter alloc] init];
+    [self.dateFormatter setDateFormat:@"dd-MM-yyyy HH:mm:ss"];
+	
+	// My birthday with time of birth
+    self.birthday = [[NSDate alloc] init];
+    self.birthday = [self.dateFormatter dateFromString:@"02-02-1994 04:15:34"];
+}
+
 - (void)updateDate
 {
-    // Date format
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"dd-MM-yyyy HH:mm:ss"];
-    // My birthday with time of birth
-    NSDate *birthday = [[NSDate alloc] init];
-    birthday = [dateFormatter dateFromString:@"02-02-1994 04:15:34"];
-    
     // Get the current calendar
     NSCalendar *calendar = [NSCalendar currentCalendar];
     // Set the unit types that we want
     unsigned int uintFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     // Get the difference between my birthday and now
-    NSDateComponents *differenceComponents = [calendar components:uintFlags fromDate:birthday toDate:[NSDate date] options:0];
+    NSDateComponents *differenceComponents = [calendar components:uintFlags fromDate:self.birthday toDate:[NSDate date] options:0];
 	
     // Set the counting labels
     self.years.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents year]];

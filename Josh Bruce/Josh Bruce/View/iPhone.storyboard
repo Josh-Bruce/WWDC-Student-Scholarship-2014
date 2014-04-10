@@ -871,7 +871,7 @@
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vOL-r7-mpD">
                                                         <rect key="frame" x="20" y="227" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research with a simple barcode scan from a book or entering a URL for a webpage. This is due to be released later this year.</string>
+                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research. Simply scan a barcode of a book or enter a URL of a webpage. This is due to be released later this year.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -902,7 +902,7 @@
                                         <rect key="frame" x="320" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="nht-VW-ZhL" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="nht-VW-ZhL" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -913,7 +913,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r1y-li-ELe">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="230" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh and his team at University are finishing up a property management app that allows for tenants to monitor their lease details, submit tickets and view new properties.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1226,7 +1226,7 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="Jj6-B5-rOF" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="Jj6-B5-rOF" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
