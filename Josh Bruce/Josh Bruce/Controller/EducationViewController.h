@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface EducationViewController : BaseViewController <UIScrollViewDelegate>
+@interface EducationViewController : BaseViewController <UIScrollViewDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *universityView;

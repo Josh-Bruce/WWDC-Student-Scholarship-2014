@@ -305,7 +305,7 @@
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GJx-zY-5OG">
                                                         <rect key="frame" x="20" y="235" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh's love for tennis came at the early age of 7, being inspired by a role model who has helped shape his life today. Roger Federer a great champion on and off the tennis court.</string>
+                                                        <string key="text">Josh's love for tennis came at the early age of 12, being inspired by a role model who has helped shape his life today. Roger Federer a great champion on and off the tennis court.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -432,6 +432,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DKG-Ec-iYo" appends="YES" id="wSJ-ys-ThN"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
@@ -453,6 +456,11 @@
                         <segue destination="58u-H0-a2t" kind="unwind" identifier="unwindInterests" unwindAction="unwindFromSwipeUpGesture:" id="pJZ-ae-mTR"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DKG-Ec-iYo">
+                    <connections>
+                        <action selector="showActionMenu:" destination="wFY-PN-0oy" id="ofT-Ua-N1n"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1198" y="2454"/>
         </scene>
@@ -1109,6 +1117,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fio-P8-NRQ" appends="YES" id="qbd-68-aCs"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
@@ -1126,6 +1137,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUQ-jp-pfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="raa-0F-EVS" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="fio-P8-NRQ">
+                    <connections>
+                        <action selector="showActionMenu:" destination="eLd-ss-GfK" id="ezd-J1-dRk"/>
+                    </connections>
+                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="pGU-3y-mqy">
                     <connections>
                         <segue destination="raa-0F-EVS" kind="unwind" identifier="unwindProjects" unwindAction="unwindFromSwipeUpGesture:" id="W6z-bY-Grc"/>
@@ -1211,7 +1227,7 @@
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fju-Cs-ag6">
                                                         <rect key="frame" x="20" y="233" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research. Simply scan a barcode of a book or enter a URL of a webpage. This is due to be released later this year.</string>
+                                                        <string key="text">Josh's favourite module to date is Software Engineering with Design Patterns. This module improved Josh's OO understanding by 100% and detailed how vital patterns worked such as the Observer pattern.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1252,7 +1268,7 @@
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SUI-53-GSG">
                                                         <rect key="frame" x="20" y="227" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research. Simply scan a barcode of a book or enter a URL of a webpage. This is due to be released later this year.</string>
+                                                        <string key="text">Josh's integrated project really put everything he has learnt into practise. This brought databases, websites, mobile and desktop clients all together, communication through a central API.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1359,6 +1375,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hE2-BH-zz0" appends="YES" id="YlJ-vn-760"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1600" height="568"/>
@@ -1380,6 +1399,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnV-AO-5RF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wvf-Jl-4oH" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="hE2-BH-zz0">
+                    <connections>
+                        <action selector="showActionMenu:" destination="Y91-jb-hwl" id="XAq-z1-VIl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="rlw-Yh-Gqe">
                     <connections>
                         <segue destination="Wvf-Jl-4oH" kind="unwind" identifier="unwindEducation" unwindAction="unwindFromSwipeUpGesture:" id="w5J-ZL-3aQ"/>
@@ -1589,6 +1613,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GWg-ey-2mh" appends="YES" id="VaY-6m-iD2"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
@@ -1607,6 +1634,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0L-qn-qcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="71u-ct-ub3" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="GWg-ey-2mh">
+                    <connections>
+                        <action selector="showActionMenu:" destination="Odr-ka-R8G" id="Lm2-kT-JM5"/>
+                    </connections>
+                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="cfr-mt-5wd">
                     <connections>
                         <segue destination="71u-ct-ub3" kind="unwind" identifier="unwindTechnicalSkills" unwindAction="unwindFromSwipeUpGesture:" id="cnY-vh-2Tl"/>
@@ -1816,6 +1848,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OlJ-KE-iG4" appends="YES" id="1Nm-SZ-lum"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
@@ -1835,6 +1870,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuo-sb-2eG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3j1-8f-T8c" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="OlJ-KE-iG4">
+                    <connections>
+                        <action selector="showActionMenu:" destination="WhN-dz-ako" id="B8b-TV-7ep"/>
+                    </connections>
+                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="jBw-H3-XZ1">
                     <connections>
                         <segue destination="3j1-8f-T8c" kind="unwind" identifier="unwindProfessional" unwindAction="unwindFromSwipeUpGesture:" id="W7F-ov-jnr"/>

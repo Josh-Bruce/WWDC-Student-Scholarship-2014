@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface TechnicalSkillsViewController : BaseViewController <UIScrollViewDelegate>
+@interface TechnicalSkillsViewController : BaseViewController <UIScrollViewDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
