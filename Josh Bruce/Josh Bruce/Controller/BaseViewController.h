@@ -34,6 +34,8 @@
 #define LOCATION_LATITUDE 50.379853
 #define LOCATION_LONGITUDE -4.137757
 
+#define SPEECH_RATE = 0.25
+
 @property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
 @property (weak, nonatomic) NSString *utteranceString;
 @property (weak, nonatomic) UILabel *labelText;

@@ -25,7 +25,7 @@
 	// Init and start our timing updating
 	[self initDateForBirthday];
     [self updateDate];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:ANIMATION_DURATION_LONG target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -116,14 +116,12 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 	// Keep the swipe to continue on the screen and centred
-    CGPoint newPosition = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.swipeToContinue.layer.position.y);
-    self.swipeToContinue.layer.position = newPosition;
+    self.swipeToContinue.layer.position = CGPointMake(scrollView.contentOffset.x + VIEW_CENTRE_X, self.swipeToContinue.layer.position.y);
     
-    if (scrollView.contentOffset.x == 320 && self.locationView.alpha != ALPHA_FINISH) {
+    if (scrollView.contentOffset.x == VIEW_WIDTH * 1 && self.locationView.alpha != ALPHA_FINISH) {
         // Fade in the location view and set the coordinates of where I live
         [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
-			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
-			self.locationView.layer.position = newPosition;
+			self.locationView.layer.position = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.locationView.alpha = ALPHA_FINISH;
 		} completion:^(BOOL finished) {
 			// Once we have faded in the view, add location of where I live on the map and zoom to that position
@@ -133,16 +131,14 @@
 			[self.locationMapView addAnnotation:myLocation];
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
-    } else if (scrollView.contentOffset.x == 640 && self.universityView.alpha != ALPHA_FINISH) {
+    } else if (scrollView.contentOffset.x == VIEW_WIDTH * 2 && self.universityView.alpha != ALPHA_FINISH) {
         [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
-			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
-			self.universityView.layer.position = newPosition;
+			self.universityView.layer.position = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.universityView.alpha = ALPHA_FINISH;
         }];
-    } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != ALPHA_FINISH) {
+    } else if (scrollView.contentOffset.x == VIEW_WIDTH * 3 && self.contactView.alpha != ALPHA_FINISH) {
         [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
-			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
-			self.contactView.layer.position = newPosition;
+			self.contactView.layer.position = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.contactView.alpha = ALPHA_FINISH;
         }];
     }

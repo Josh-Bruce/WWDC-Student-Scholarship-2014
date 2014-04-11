@@ -28,7 +28,7 @@
 	// Init our speech text
 	AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:utteranceString];
 	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
-	speechUtterance.rate = 0.25f;
+	speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate / 2;
 	
 	return speechUtterance;
 }
