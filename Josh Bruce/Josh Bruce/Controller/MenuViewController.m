@@ -137,6 +137,7 @@
         cell.accessoryType = UITableViewCellAccessoryDetailButton;
     }
 	
+	// Add a whited out background view when a row is selected
 	UIView *selectionColor = [[UIView alloc] init];
     selectionColor.backgroundColor = [UIColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.1];
     cell.selectedBackgroundView = selectionColor;

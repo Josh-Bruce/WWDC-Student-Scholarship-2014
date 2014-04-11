@@ -150,6 +150,7 @@
 
 - (IBAction)showActionMenu:(UILongPressGestureRecognizer *)sender
 {
+	// Check if the state is beginning and then show the action sheet
 	if (sender.state == UIGestureRecognizerStateBegan) {
 		UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Navigation" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Main Menu" otherButtonTitles:@"Getting Older", @"Living in the UK", @"University", @"Contact", nil];
 		[actionSheet showInView:self.view];
@@ -171,7 +172,7 @@
 
 - (IBAction)unwindFromResume:(UIStoryboardSegue *)segue
 {
-    
+    // Allows for storyboard unwind segue from the UIWebView
 }
 
 @end
