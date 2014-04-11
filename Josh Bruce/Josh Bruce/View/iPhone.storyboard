@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="d4X-NI-fyS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="d4X-NI-fyS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -1167,6 +1167,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Odr-ka-R8G" eventType="touchUpInside" id="mbt-kI-EBz"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xcode" id="eUn-fG-GqA">
                                                         <rect key="frame" x="66" y="99" width="128" height="128"/>
@@ -1211,6 +1214,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Odr-ka-R8G" eventType="touchUpInside" id="jfd-YA-RCD"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="java" id="9iX-Mn-xwH">
                                                         <rect key="frame" x="59" y="68" width="143" height="189"/>
@@ -1253,6 +1259,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Odr-ka-R8G" eventType="touchUpInside" id="Cug-YV-joT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1287,6 +1296,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Odr-ka-R8G" eventType="touchUpInside" id="ZMG-tY-dt5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1302,6 +1314,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="delegate" destination="Odr-ka-R8G" id="E9O-mv-nq3"/>
                                     <outletCollection property="gestureRecognizers" destination="cfr-mt-5wd" appends="YES" id="0sV-uS-GTj"/>
                                 </connections>
                             </scrollView>
@@ -1310,6 +1323,18 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="javaLabelText" destination="5T5-Zj-3Vg" id="riN-Sj-BRl"/>
+                        <outlet property="javaView" destination="cAa-U7-AUF" id="Mf5-gt-JSH"/>
+                        <outlet property="objectivecLabelText" destination="40T-pn-xpD" id="zX1-w8-pJu"/>
+                        <outlet property="objectivecView" destination="Hao-Xb-kbf" id="ZPf-wW-ZRn"/>
+                        <outlet property="scrollView" destination="y7T-SC-Sg3" id="36M-ns-NZZ"/>
+                        <outlet property="sqlLabelText" destination="y6v-p7-Grj" id="XtF-e7-uLn"/>
+                        <outlet property="sqlView" destination="J7Q-II-kTc" id="di2-xP-DRN"/>
+                        <outlet property="swipeToContinue" destination="GDl-Mh-lB9" id="gnd-YE-IId"/>
+                        <outlet property="webLabelText" destination="6os-JA-PUR" id="kgx-cH-ffr"/>
+                        <outlet property="webView" destination="Jj6-B5-rOF" id="bhD-VA-hAB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0L-qn-qcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="71u-ct-ub3" userLabel="Exit" sceneMemberID="exit"/>
