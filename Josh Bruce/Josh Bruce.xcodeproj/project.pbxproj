@@ -35,6 +35,8 @@
 		2044D78B18EF3F4C008926D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2044D78A18EF3F4C008926D6 /* QuartzCore.framework */; };
 		2073986918F29A7C00B54AEC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073986818F29A7C00B54AEC /* MapKit.framework */; };
 		20937EEE18F7DF4A002B3D14 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20937EED18F7DF4A002B3D14 /* BaseViewController.m */; };
+		20937EF318F8282B002B3D14 /* JoshBruce.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20937EF218F8282B002B3D14 /* JoshBruce.pdf */; };
+		20937EF618F8284C002B3D14 /* JoshBruceResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20937EF518F8284C002B3D14 /* JoshBruceResumeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,9 @@
 		2073986818F29A7C00B54AEC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		20937EEC18F7DF4A002B3D14 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		20937EED18F7DF4A002B3D14 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		20937EF218F8282B002B3D14 /* JoshBruce.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = JoshBruce.pdf; sourceTree = "<group>"; };
+		20937EF418F8284C002B3D14 /* JoshBruceResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoshBruceResumeViewController.h; sourceTree = "<group>"; };
+		20937EF518F8284C002B3D14 /* JoshBruceResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoshBruceResumeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 		2032D59018F1AB1800890505 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				20937EF218F8282B002B3D14 /* JoshBruce.pdf */,
 				2012970918F32D7000A826C4 /* blured_dark.jpg */,
 			);
 			path = Assets;
@@ -218,6 +224,8 @@
 				2032D59A18F1BE5200890505 /* EducationViewController.m */,
 				2032D5A218F1BE7200890505 /* InterestsViewController.h */,
 				2032D5A318F1BE7200890505 /* InterestsViewController.m */,
+				20937EF418F8284C002B3D14 /* JoshBruceResumeViewController.h */,
+				20937EF518F8284C002B3D14 /* JoshBruceResumeViewController.m */,
 				2032D56F18F19B6300890505 /* MenuViewController.h */,
 				2032D57018F19B6300890505 /* MenuViewController.m */,
 				2032D59C18F1BE5C00890505 /* ProfessionalViewController.h */,
@@ -330,6 +338,7 @@
 			files = (
 				2012970A18F32D7000A826C4 /* blured_dark.jpg in Resources */,
 				2032D58718F1A14A00890505 /* Images.xcassets in Resources */,
+				20937EF318F8282B002B3D14 /* JoshBruce.pdf in Resources */,
 				203916C218EEEB8B00E87B8C /* InfoPlist.strings in Resources */,
 				203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */,
 			);
@@ -357,6 +366,7 @@
 				2032D5A418F1BE7200890505 /* InterestsViewController.m in Sources */,
 				2032D59818F1BE4800890505 /* ProjectsViewController.m in Sources */,
 				2032D5A118F1BE6B00890505 /* TechnicalSkillsViewController.m in Sources */,
+				20937EF618F8284C002B3D14 /* JoshBruceResumeViewController.m in Sources */,
 				2032D57118F19B6300890505 /* MenuViewController.m in Sources */,
 				2023DE0718F061670042B78B /* RoundedRect.m in Sources */,
 				2032D59518F1BE3600890505 /* AboutMeViewController.m in Sources */,

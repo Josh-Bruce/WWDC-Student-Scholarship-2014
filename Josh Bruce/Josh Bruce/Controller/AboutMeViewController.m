@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	
 	// Round the map view
-    self.locationMapView.layer.cornerRadius = 10.0;
+    self.locationMapView.layer.cornerRadius = IMAGEVIEW_CORNER_RADIUS;
     self.locationMapView.layer.masksToBounds = YES;
     
     // Round the contact image
@@ -167,6 +167,11 @@
 		// Scroll to the position in the scroll view
 		[self.scrollView scrollRectToVisible:CGRectMake(VIEW_WIDTH * (buttonIndex - 1), 0, VIEW_WIDTH, VIEW_HEIGHT) animated:YES];
 	}
+}
+
+- (IBAction)unwindFromResume:(UIStoryboardSegue *)segue
+{
+    
 }
 
 @end
