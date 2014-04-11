@@ -7,19 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RoundedRect.h"
-#import <QuartzCore/QuartzCore.h>
-#import <MapKit/MapKit.h>
-#import <AVFoundation/AVFoundation.h>
+#import "BaseViewController.h"
 
-@interface AboutMeViewController : UIViewController <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
+@interface AboutMeViewController : BaseViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
 @property (strong, nonatomic) NSDate *birthday;
 @property (strong, nonatomic) NSTimer *timer;
-@property (weak, nonatomic) NSString *utteranceString;
-@property (weak, nonatomic) UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet RoundedRect *ageView;
 @property (weak, nonatomic) IBOutlet UILabel *ageTextLabel;
@@ -36,6 +30,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *hours;
 @property (weak, nonatomic) IBOutlet UILabel *minutes;
 @property (weak, nonatomic) IBOutlet UILabel *seconds;
-@property (nonatomic, weak) NSString *itemToView;
 
 @end

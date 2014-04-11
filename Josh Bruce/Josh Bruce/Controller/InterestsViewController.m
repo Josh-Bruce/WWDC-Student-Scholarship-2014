@@ -7,36 +7,12 @@
 //
 
 #import "InterestsViewController.h"
-#import "RoundedRect.h"
-#import <AVFoundation/AVFoundation.h>
 
-@interface InterestsViewController () <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
-@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
-@property (weak, nonatomic) NSString *utteranceString;
-@property (weak, nonatomic) UILabel *labelText;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
-@property (weak, nonatomic) IBOutlet RoundedRect *tennisView;
-@property (weak, nonatomic) IBOutlet UILabel *tennisTextLabel;
-@property (weak, nonatomic) IBOutlet RoundedRect *programmingView;
-@property (weak, nonatomic) IBOutlet UILabel *programmingTextLabel;
-@property (weak, nonatomic) IBOutlet RoundedRect *appleView;
-@property (weak, nonatomic) IBOutlet UILabel *appleTextLabel;
+@interface InterestsViewController ()
+
 @end
 
 @implementation InterestsViewController
-
-#define VIEW_CENTRE_X 160
-
-#define WELCOME_START_X 160
-#define WELCOME_START_Y 62
-#define WELCOME_FINISH_X 160
-#define WELCOME_FINISH_Y 262
-
-#define ALPHA_START 0.0
-#define ALPHA_FINISH 1.0
-
-#define ANIMATION_DURATION 1.0
 
 - (void)viewDidLoad
 {
@@ -53,26 +29,16 @@
 	
 	// Slide in and alpha in the views
 	if (self.tennisView.alpha != ALPHA_FINISH) {
-		[UIView animateWithDuration:ANIMATION_DURATION animations:^{
+		[UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
             CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.tennisView.layer.position = newPosition;
 			self.tennisView.alpha = ALPHA_FINISH;
 		} completion:^(BOOL finished) {
-            [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+            [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 				self.swipeToContinue.alpha = ALPHA_FINISH;
 			}];
         }];
 	}
-}
-
-- (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString
-{
-	// Init our speech text
-	AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:utteranceString];
-	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
-	speechUtterance.rate = 0.25f;
-	
-	return speechUtterance;
 }
 
 - (IBAction)speakCurrentViewText:(UIButton *)sender
@@ -103,25 +69,6 @@
 	}
 }
 
-#pragma mark AVSpeechSynthesizer Delegate
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance
-{
-    NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
-    [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:characterRange];
-    self.labelText.attributedText = mutableAttributedString;
-}
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance
-{
-    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
-}
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
-{
-    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
-}
-
 #pragma mark UIScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -132,13 +79,13 @@
 	
 	// Slide in and alpha in the views once they have been scrolled to
 	if (scrollView.contentOffset.x == 320.00 && self.programmingView.alpha != ALPHA_FINISH) {
-		[UIView animateWithDuration:ANIMATION_DURATION animations:^{
+		[UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.programmingView.layer.position = newPosition;
 			self.programmingView.alpha = ALPHA_FINISH;
 		}];
 	} else if (scrollView.contentOffset.x == 640.00 && self.appleView.alpha != ALPHA_FINISH) {
-		[UIView animateWithDuration:ANIMATION_DURATION animations:^{
+		[UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.appleView.layer.position = newPosition;
 			self.appleView.alpha = ALPHA_FINISH;

@@ -173,22 +173,22 @@
     }];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-	// Get the indexPath of the selected row
-	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-	
-	// If we have an index path, prepare a segue
-	if (indexPath) {
-		// Check against our segue identifiers
-		if ([segue.identifier isEqualToString:@"aboutMe"]) {
-			if ([segue.destinationViewController isKindOfClass:[AboutMeViewController class]]) {
-				AboutMeViewController *dvc = (AboutMeViewController *)segue.destinationViewController;
-				dvc.itemToView = @"location";
-			}
-		}
-	}
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//	// Get the indexPath of the selected row
+//	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//	
+//	// If we have an index path, prepare a segue
+//	if (indexPath) {
+//		// Check against our segue identifiers
+//		if ([segue.identifier isEqualToString:@"aboutMe"]) {
+//			if ([segue.destinationViewController isKindOfClass:[AboutMeViewController class]]) {
+//				AboutMeViewController *dvc = (AboutMeViewController *)segue.destinationViewController;
+//				dvc.itemToView = @"location";
+//			}
+//		}
+//	}
+//}
 
 - (IBAction)unwindFromSwipeUpGesture:(UIStoryboardSegue *)segue
 {

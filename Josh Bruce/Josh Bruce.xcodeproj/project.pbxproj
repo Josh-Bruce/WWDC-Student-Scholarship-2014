@@ -35,6 +35,7 @@
 		203F803B18F48479004623A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203F803A18F48479004623A7 /* AudioToolbox.framework */; };
 		2044D78B18EF3F4C008926D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2044D78A18EF3F4C008926D6 /* QuartzCore.framework */; };
 		2073986918F29A7C00B54AEC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073986818F29A7C00B54AEC /* MapKit.framework */; };
+		20937EEE18F7DF4A002B3D14 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20937EED18F7DF4A002B3D14 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		203F803A18F48479004623A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2044D78A18EF3F4C008926D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2073986818F29A7C00B54AEC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		20937EEC18F7DF4A002B3D14 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		20937EED18F7DF4A002B3D14 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 			children = (
 				2032D59318F1BE3600890505 /* AboutMeViewController.h */,
 				2032D59418F1BE3600890505 /* AboutMeViewController.m */,
+				20937EEC18F7DF4A002B3D14 /* BaseViewController.h */,
+				20937EED18F7DF4A002B3D14 /* BaseViewController.m */,
 				2032D59918F1BE5200890505 /* EducationViewController.h */,
 				2032D59A18F1BE5200890505 /* EducationViewController.m */,
 				2032D5A218F1BE7200890505 /* InterestsViewController.h */,
@@ -350,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2032D59E18F1BE5C00890505 /* ProfessionalViewController.m in Sources */,
+				20937EEE18F7DF4A002B3D14 /* BaseViewController.m in Sources */,
 				203916C818EEEB8B00E87B8C /* JoshBruceAppDelegate.m in Sources */,
 				203916C418EEEB8B00E87B8C /* main.m in Sources */,
 				2032D5A418F1BE7200890505 /* InterestsViewController.m in Sources */,

@@ -14,23 +14,6 @@
 
 @implementation AboutMeViewController
 
-#define VIEW_HEIGHT self.view.layer.frame.size.height
-#define VIEW_WIDTH self.view.layer.frame.size.width
-#define VIEW_CENTRE_X VIEW_WIDTH / 2
-
-#define WELCOME_START_X 160
-#define WELCOME_START_Y 62
-#define WELCOME_FINISH_X 160
-#define WELCOME_FINISH_Y 262
-
-#define ALPHA_START 0.0
-#define ALPHA_FINISH 1.0
-
-#define ANIMATION_DURATION 1.0
-
-#define LOCATION_LATITUDE 50.379853
-#define LOCATION_LONGITUDE -4.137757
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,10 +21,6 @@
 	// Round the map view
     self.locationMapView.layer.cornerRadius = 10.0;
     self.locationMapView.layer.masksToBounds = YES;
-	
-	// Init our speech synthesizer
-	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-    self.speechSynthesizer.delegate = self;
     
 	// Init and start our timing updating
 	[self initDateForBirthday];
@@ -55,12 +34,12 @@
 	
 	// Slide in and alpha in the views
 	if (self.ageView.alpha != ALPHA_FINISH) {
-		[UIView animateWithDuration:ANIMATION_DURATION animations:^{
+		[UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
             CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.ageView.layer.position = newPosition;
 			self.ageView.alpha = ALPHA_FINISH;
 		} completion:^(BOOL finished) {
-            [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+            [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 				self.swipeToContinue.alpha = ALPHA_FINISH;
 			}];
         }];
@@ -104,16 +83,6 @@
     self.seconds.text = [NSString stringWithFormat:@"%ld", (long)[differenceComponents second]];
 }
 
-- (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString
-{
-	// Init our speech text
-	AVSpeechUtterance *speechUtterance = [[AVSpeechUtterance alloc] initWithString:utteranceString];
-	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
-	speechUtterance.rate = 0.25f;
-	
-	return speechUtterance;
-}
-
 - (IBAction)speakCurrentViewText:(UIButton *)sender
 {
 	// Depending on the current part of the scroll view, speak if the users wants it
@@ -142,25 +111,6 @@
 	}
 }
 
-#pragma mark AVSpeechSynthesizer Delegate
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance
-{
-    NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:utterance.speechString];
-    [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:characterRange];
-    self.labelText.attributedText = mutableAttributedString;
-}
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance
-{
-    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
-}
-
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
-{
-    self.labelText.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
-}
-
 #pragma mark UIScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -171,7 +121,7 @@
     
     if (scrollView.contentOffset.x == 320 && self.locationView.alpha != ALPHA_FINISH) {
         // Fade in the location view and set the coordinates of where I live
-        [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+        [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.locationView.layer.position = newPosition;
 			self.locationView.alpha = ALPHA_FINISH;
@@ -184,23 +134,18 @@
 			[self.locationMapView showAnnotations:@[myLocation] animated:YES];
 		}];
     } else if (scrollView.contentOffset.x == 640 && self.universityView.alpha != ALPHA_FINISH) {
-        [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+        [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.universityView.layer.position = newPosition;
 			self.universityView.alpha = ALPHA_FINISH;
         }];
     } else if (scrollView.contentOffset.x == 960 && self.contactView.alpha != ALPHA_FINISH) {
-        [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+        [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.contactView.layer.position = newPosition;
 			self.contactView.alpha = ALPHA_FINISH;
         }];
     }
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end
