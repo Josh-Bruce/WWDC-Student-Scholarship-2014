@@ -22,6 +22,10 @@
     self.locationMapView.layer.cornerRadius = 10.0;
     self.locationMapView.layer.masksToBounds = YES;
     
+    // Round the contact image
+    self.contactImageView.layer.cornerRadius = self.contactImageView.frame.size.width / 2;
+    self.contactImageView.layer.masksToBounds = YES;
+    
 	// Init and start our timing updating
 	[self initDateForBirthday];
     [self updateDate];

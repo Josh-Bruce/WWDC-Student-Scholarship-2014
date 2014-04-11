@@ -30,6 +30,7 @@
 	speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
 	speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate / 2;
 	
+	// Return the utterance to the method caller
 	return speechUtterance;
 }
 
@@ -54,6 +55,7 @@
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
+	// Set the status bar to be the white / light colour
     return UIStatusBarStyleLightContent;
 }
 

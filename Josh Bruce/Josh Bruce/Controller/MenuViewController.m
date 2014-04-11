@@ -53,9 +53,18 @@
     // Only show the tutorial overlay the once and then the user can access this again using the question mark
     if (![[NSUserDefaults standardUserDefaults] valueForKey:@"joshbruce_overlay_tutorial"]) {
         // Animate the overlay tutorial on screen
-        [UIView animateWithDuration:1.0 animations:^{
-            self.tutorialView.layer.position = CGPointMake(160, 284);
-        }];
+		[UIView animateWithDuration:0.5 animations:^{
+			self.tutorialView.alpha = 1.0;
+		} completion:^(BOOL finished) {
+			[UIView animateWithDuration:1.0 animations:^{
+				self.tutorialScrollView.layer.position = CGPointMake(160, 284);
+			} completion:^(BOOL finished) {
+				[UIView animateWithDuration:0.5 animations:^{
+					self.tutorialPageControl.alpha = 1.0;
+					self.dismissButton.alpha = 1.0;
+				}];
+			}];
+		}];
         
         // Save a value to the defaults for the key joshbruce_overlay_tutorial
         [[NSUserDefaults standardUserDefaults] setValue:@"Shown" forKey:@"joshbruce_overlay_tutorial"];

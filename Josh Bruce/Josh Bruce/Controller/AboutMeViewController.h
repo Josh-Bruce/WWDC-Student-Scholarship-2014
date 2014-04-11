@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *universityView;
 @property (weak, nonatomic) IBOutlet UILabel *universityTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *contactView;
+@property (weak, nonatomic) IBOutlet UIImageView *contactImageView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet MKMapView *locationMapView;
 @property (weak, nonatomic) IBOutlet UILabel *years;
