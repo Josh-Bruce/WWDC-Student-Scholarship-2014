@@ -809,6 +809,7 @@
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="vmi-0G-wUA" appends="YES" id="R1n-UT-OK0"/>
+                            <outletCollection property="gestureRecognizers" destination="hhG-Kn-x2l" appends="YES" id="vvY-Zf-Ziz"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -840,6 +841,11 @@
                         <segue destination="Dgn-vB-eAd" kind="unwind" identifier="unwindAboutMe" unwindAction="unwindFromSwipeUpGesture:" id="kEW-qN-msh"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="hhG-Kn-x2l">
+                    <connections>
+                        <action selector="showActionMenu:" destination="I3h-P3-8oX" id="xiC-Mk-1Ln"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1198" y="-926"/>
         </scene>
@@ -1159,7 +1165,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fju-Cs-ag6">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="235" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh is currently working on an iOS application that allows students to reference their research. Simply scan a barcode of a book or enter a URL of a webpage. This is due to be released later this year.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1176,7 +1182,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design_patterns" id="4rH-Xy-hio">
-                                                        <rect key="frame" x="60" y="58" width="140" height="175"/>
+                                                        <rect key="frame" x="65" y="56" width="130" height="163"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>

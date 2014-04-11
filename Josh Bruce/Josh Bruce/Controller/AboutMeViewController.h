@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface AboutMeViewController : BaseViewController <UIScrollViewDelegate>
+@interface AboutMeViewController : BaseViewController <UIScrollViewDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
 @property (strong, nonatomic) NSDate *birthday;

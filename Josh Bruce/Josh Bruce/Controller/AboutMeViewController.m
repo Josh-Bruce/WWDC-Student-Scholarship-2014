@@ -148,4 +148,25 @@
     }
 }
 
+- (IBAction)showActionMenu:(UILongPressGestureRecognizer *)sender
+{
+	if (sender.state == UIGestureRecognizerStateBegan) {
+		UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Navigation" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Main Menu" otherButtonTitles:@"Getting Older", @"Living in the UK", @"University", @"Contact", nil];
+		[actionSheet showInView:self.view];
+	}
+}
+
+#pragma mark UIActionSheet Delegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0) {
+		// Back to the main menu
+		[self performSegueWithIdentifier:@"unwindAboutMe" sender:self];
+	} else {
+		// Scroll to the position in the scroll view
+		[self.scrollView scrollRectToVisible:CGRectMake(VIEW_WIDTH * (buttonIndex - 1), 0, VIEW_WIDTH, VIEW_HEIGHT) animated:YES];
+	}
+}
+
 @end
