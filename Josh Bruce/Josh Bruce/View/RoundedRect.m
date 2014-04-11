@@ -12,6 +12,7 @@
 
 @implementation RoundedRect
 
+// This is much better than draw rect for this purpose (Less memory)
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	self = [super initWithCoder:aDecoder];
