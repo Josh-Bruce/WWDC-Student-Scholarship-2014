@@ -7,24 +7,12 @@
 //
 
 #import "WelcomeViewController.h"
-#import "RoundedRect.h"
-#import <QuartzCore/QuartzCore.h>
 
 @interface WelcomeViewController ()
-@property (weak, nonatomic) IBOutlet RoundedRect *welcomeView;
-@property (weak, nonatomic) IBOutlet UIButton *letsBeginButton;
-@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+
 @end
 
 @implementation WelcomeViewController
-
-#define WELCOME_START_X 160
-#define WELCOME_START_Y 62
-#define WELCOME_FINISH_X 160
-#define WELCOME_FINISH_Y 262
-
-#define ALPHA_START 0.0
-#define ALPHA_FINISH 1.0
 
 - (void)viewDidLoad
 {
@@ -46,11 +34,6 @@
             self.letsBeginButton.alpha = 1.0;
         }];
     }];
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end

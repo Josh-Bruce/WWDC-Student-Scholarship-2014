@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface WelcomeViewController : UIViewController
+@interface WelcomeViewController : BaseViewController
+
+@property (weak, nonatomic) IBOutlet RoundedRect *welcomeView;
+@property (weak, nonatomic) IBOutlet UIButton *letsBeginButton;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @end

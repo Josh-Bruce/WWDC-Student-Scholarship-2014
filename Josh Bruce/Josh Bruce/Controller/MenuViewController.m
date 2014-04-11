@@ -7,22 +7,12 @@
 //
 
 #import "MenuViewController.h"
-#import "AboutMeViewController.h"
-#import <QuartzCore/QuartzCore.h>
 
-@interface MenuViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
-@property (strong, nonatomic) NSMutableArray *menuArray;
-@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *tutorialView;
-@property (weak, nonatomic) IBOutlet UIScrollView *tutorialScrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *tutorialPageControl;
-@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
+@interface MenuViewController ()
+
 @end
 
 @implementation MenuViewController
-
-#define VIEW_CENTRE_X self.view.layer.frame.size.width / 2
 
 - (NSMutableArray *)menuArray
 {
@@ -34,7 +24,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 	
 	// Add a rounded effect to the profile image
     self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
@@ -193,11 +182,6 @@
 - (IBAction)unwindFromSwipeUpGesture:(UIStoryboardSegue *)segue
 {
 	// Allows for presented views to unwind from the storyboard with the gesture
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end

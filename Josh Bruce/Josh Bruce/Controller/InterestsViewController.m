@@ -17,10 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Init our speech synthesizer
-	self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-    self.speechSynthesizer.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -91,11 +87,6 @@
 			self.appleView.alpha = ALPHA_FINISH;
 		}];
 	}
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 @end

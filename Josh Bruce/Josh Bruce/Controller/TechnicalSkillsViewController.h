@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RoundedRect.h"
-#import <QuartzCore/QuartzCore.h>
-#import <AVFoundation/AVFoundation.h>
+#import "BaseViewController.h"
 
-@interface TechnicalSkillsViewController : UIViewController <UIScrollViewDelegate, AVSpeechSynthesizerDelegate>
+@interface TechnicalSkillsViewController : BaseViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
-@property (weak, nonatomic) NSString *utteranceString;
-@property (weak, nonatomic) UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (weak, nonatomic) IBOutlet RoundedRect *objectivecView;
