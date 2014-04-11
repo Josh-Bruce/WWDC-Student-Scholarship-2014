@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="nlb-s2-B2n">
-                                <rect key="frame" x="0.0" y="158" width="320" height="330"/>
+                                <rect key="frame" x="0.0" y="158" width="320" height="384"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -58,16 +58,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y1L-EA-nM6">
-                                <rect key="frame" x="15" y="516" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="question">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="displayOverlay:" destination="Q5p-Pr-wkl" eventType="touchUpInside" id="aQV-Oo-C9V"/>
-                                </connections>
-                            </button>
                             <view alpha="0.0" contentMode="scaleToFill" id="SZR-wt-eZr">
                                 <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1125,9 +1115,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xgz-cK-iiK">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="234" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research. Simply scan a barcode of a book or enter a URL of a webpage. This is due to be released later this year.</string>
+                                                        <string key="text">Josh is studying Computing Sceicne at the University of Plymouth in the UK. The following are some of Josh's favourite modules and interests at University.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1137,6 +1127,9 @@
                                                         <state key="normal" backgroundImage="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="3VD-1b-KcK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1178,17 +1171,17 @@
                                                         <state key="normal" backgroundImage="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="8Gg-GQ-gnm"/>
+                                                        </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design_patterns" id="4rH-Xy-hio">
+                                                        <rect key="frame" x="60" y="58" width="140" height="175"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vjb-be-3Qj">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1219,17 +1212,13 @@
                                                         <state key="normal" backgroundImage="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="sj5-zM-RNa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mi2-7h-KMU">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1260,17 +1249,13 @@
                                                         <state key="normal" backgroundImage="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="6VC-sD-SPI"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2xr-Hy-8NP">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1301,17 +1286,13 @@
                                                         <state key="normal" backgroundImage="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="fL6-Br-jxO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
-                                            <label opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IQH-r7-iEz">
-                                                <rect key="frame" x="73" y="514" width="175" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1319,7 +1300,7 @@
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="960" height="568"/>
+                                        <size key="value" width="1600" height="568"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1331,6 +1312,21 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1600" height="568"/>
+                    <connections>
+                        <outlet property="algorithmDesignLabelText" destination="tnT-2h-sYs" id="WMr-WO-suv"/>
+                        <outlet property="algorithmDesignView" destination="pBb-5B-1gJ" id="GC4-Ac-VmB"/>
+                        <outlet property="databaseDevelopmentLabelText" destination="SHr-CY-wHj" id="Ang-p3-Stn"/>
+                        <outlet property="databaseDevelopmentView" destination="6p1-Es-nXO" id="vy6-Ga-LVc"/>
+                        <outlet property="designPatternsImageView" destination="4rH-Xy-hio" id="Q74-cn-jUL"/>
+                        <outlet property="designPatternsLabelText" destination="fju-Cs-ag6" id="zeo-bo-FSh"/>
+                        <outlet property="designPatternsView" destination="MiJ-Wo-jB4" id="qNO-Hn-2OX"/>
+                        <outlet property="integratedProjectLabelText" destination="SUI-53-GSG" id="j4T-lb-5P4"/>
+                        <outlet property="integratedProjectView" destination="ac0-dN-b4S" id="2lT-Id-bTX"/>
+                        <outlet property="scrollView" destination="hpD-zv-dta" id="ONu-bp-S7Q"/>
+                        <outlet property="swipeToContinue" destination="bqy-vr-piO" id="5cW-gK-eUm"/>
+                        <outlet property="universityLabelText" destination="Xgz-cK-iiK" id="nDP-fI-4hZ"/>
+                        <outlet property="universityView" destination="o6a-Rx-R3W" id="o4A-cE-agx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnV-AO-5RF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wvf-Jl-4oH" userLabel="Exit" sceneMemberID="exit"/>
@@ -1804,10 +1800,10 @@
         <image name="audio_large" width="128" height="128"/>
         <image name="bloom" width="220" height="130"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
+        <image name="design_patterns" width="140" height="175"/>
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="java" width="143" height="189"/>
         <image name="profile" width="130" height="130"/>
-        <image name="question" width="32" height="32"/>
         <image name="salesx" width="220" height="56"/>
         <image name="sql" width="200" height="150"/>
         <image name="surftrack" width="220" height="57"/>

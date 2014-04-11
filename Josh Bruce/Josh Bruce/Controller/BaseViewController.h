@@ -34,7 +34,7 @@
 #define LOCATION_LATITUDE 50.379853
 #define LOCATION_LONGITUDE -4.137757
 
-#define SPEECH_RATE = 0.25
+#define IMAGEVIEW_CORNER_RADIUS 10.0
 
 @property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
 @property (weak, nonatomic) NSString *utteranceString;

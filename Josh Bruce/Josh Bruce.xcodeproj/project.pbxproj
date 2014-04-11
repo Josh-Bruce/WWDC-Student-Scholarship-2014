@@ -12,7 +12,6 @@
 		2023DE0718F061670042B78B /* RoundedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2023DE0618F061670042B78B /* RoundedRect.m */; };
 		2032D57118F19B6300890505 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D57018F19B6300890505 /* MenuViewController.m */; };
 		2032D58718F1A14A00890505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2032D58618F1A14A00890505 /* Images.xcassets */; };
-		2032D59218F1AB5700890505 /* blured_green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2032D59118F1AB5700890505 /* blured_green.jpg */; };
 		2032D59518F1BE3600890505 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59418F1BE3600890505 /* AboutMeViewController.m */; };
 		2032D59818F1BE4800890505 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59718F1BE4800890505 /* ProjectsViewController.m */; };
 		2032D59B18F1BE5200890505 /* EducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2032D59A18F1BE5200890505 /* EducationViewController.m */; };
@@ -57,7 +56,6 @@
 		2032D56F18F19B6300890505 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		2032D57018F19B6300890505 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		2032D58618F1A14A00890505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2032D59118F1AB5700890505 /* blured_green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blured_green.jpg; sourceTree = "<group>"; };
 		2032D59318F1BE3600890505 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		2032D59418F1BE3600890505 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		2032D59618F1BE4800890505 /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				2012970918F32D7000A826C4 /* blured_dark.jpg */,
-				2032D59118F1AB5700890505 /* blured_green.jpg */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 			files = (
 				2012970A18F32D7000A826C4 /* blured_dark.jpg in Resources */,
 				2032D58718F1A14A00890505 /* Images.xcassets in Resources */,
-				2032D59218F1AB5700890505 /* blured_green.jpg in Resources */,
 				203916C218EEEB8B00E87B8C /* InfoPlist.strings in Resources */,
 				203916EA18EEECE100E87B8C /* iPhone.storyboard in Resources */,
 			);

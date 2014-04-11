@@ -36,6 +36,7 @@
 	[self.menuArray addObject:@"Professional"];
 	[self.menuArray addObject:@"Technical Skills"];
 	[self.menuArray addObject:@"Interests"];
+	[self.menuArray addObject:@"Tutorial Overlay"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,7 +97,20 @@
 		[self performSegueWithIdentifier:@"technicalSkills" sender:self];
 	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Interests"]) {
 		[self performSegueWithIdentifier:@"interests" sender:self];
-	}
+	} else if ([self.menuArray[indexPath.row] isEqualToString:@"Tutorial Overlay"]) {
+        // Deselect the previous row
+        [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+        [self displayOverlay];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.menuArray[indexPath.row] isEqualToString:@"Tutorial Overlay"]) {
+        // Deselect the previous row
+        [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+        [self displayOverlay];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,7 +132,10 @@
 		cell.imageView.image = [UIImage imageNamed:@"technical_skills"];
 	} else if ([cellText isEqualToString:@"Interests"]) {
 		cell.imageView.image = [UIImage imageNamed:@"interests"];
-	}
+	} else if ([cellText isEqualToString:@"Tutorial Overlay"]) {
+        cell.imageView.image = [UIImage imageNamed:@"question"];
+        cell.accessoryType = UITableViewCellAccessoryDetailButton;
+    }
 	
 	UIView *selectionColor = [[UIView alloc] init];
     selectionColor.backgroundColor = [UIColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.1];
@@ -136,7 +153,7 @@
     self.tutorialPageControl.currentPage = page;
 }
 
-- (IBAction)displayOverlay:(UIButton *)sender
+- (void)displayOverlay
 {
     // Display the overlay tutorial again via user input
     [UIView animateWithDuration:0.5 animations:^{
@@ -170,23 +187,6 @@
         }];
     }];
 }
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//	// Get the indexPath of the selected row
-//	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//	
-//	// If we have an index path, prepare a segue
-//	if (indexPath) {
-//		// Check against our segue identifiers
-//		if ([segue.identifier isEqualToString:@"aboutMe"]) {
-//			if ([segue.destinationViewController isKindOfClass:[AboutMeViewController class]]) {
-//				AboutMeViewController *dvc = (AboutMeViewController *)segue.destinationViewController;
-//				dvc.itemToView = @"location";
-//			}
-//		}
-//	}
-//}
 
 - (IBAction)unwindFromSwipeUpGesture:(UIStoryboardSegue *)segue
 {
