@@ -8,8 +8,6 @@
 
 #import "RoundedRect.h"
 
-@import QuartzCore;
-
 @implementation RoundedRect
 
 // This is much better than draw rect for this purpose (Less memory)
