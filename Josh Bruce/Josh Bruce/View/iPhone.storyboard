@@ -275,7 +275,7 @@
         <!--Interests View Controller-->
         <scene sceneID="dKP-PB-aXR">
             <objects>
-                <viewController id="wFY-PN-0oy" customClass="InterestsViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wFY-PN-0oy" customClass="InterestsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCJ-ZL-4B2">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -930,7 +930,7 @@
         <!--Projects View Controller-->
         <scene sceneID="8ls-yq-egV">
             <objects>
-                <viewController id="eLd-ss-GfK" customClass="ProjectsViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eLd-ss-GfK" customClass="ProjectsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4XT-ec-mFF">
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1032,7 +1032,7 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="fPh-V2-k9i" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="fPh-V2-k9i" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1073,7 +1073,7 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="3Tn-kg-18c" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="3Tn-kg-18c" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1084,9 +1084,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nvC-qE-fnM">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="230" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Josh is currently working on an iOS application that allows students to reference their research with a simple barcode scan from a book or entering a URL for a webpage. This is due to be released later this year.</string>
+                                                        <string key="text">Josh has just completed and launched a website for SalesX. This was a great project and all went according to plan. Communication was key and the client was particularly happy with the end product.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1097,6 +1097,10 @@
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eldercare" id="Dgq-hz-tlA">
+                                                        <rect key="frame" x="20" y="67" width="220" height="143"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1153,7 +1157,7 @@
         <!--Education View Controller-->
         <scene sceneID="Uma-HA-hua">
             <objects>
-                <viewController id="Y91-jb-hwl" customClass="EducationViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Y91-jb-hwl" customClass="EducationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EfX-jC-fYQ">
                         <rect key="frame" x="0.0" y="0.0" width="1600" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1214,7 +1218,7 @@
                                         <rect key="frame" x="320" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="MiJ-Wo-jB4" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="MiJ-Wo-jB4" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1415,7 +1419,7 @@
         <!--Technical Skills View Controller-->
         <scene sceneID="v19-Go-GJF">
             <objects>
-                <viewController id="Odr-ka-R8G" customClass="TechnicalSkillsViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Odr-ka-R8G" customClass="TechnicalSkillsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFP-To-p8r">
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1650,7 +1654,7 @@
         <!--Professional View Controller-->
         <scene sceneID="ce2-H5-8xM">
             <objects>
-                <viewController id="WhN-dz-ako" customClass="ProfessionalViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="WhN-dz-ako" customClass="ProfessionalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwg-jb-dWW">
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1891,6 +1895,7 @@
         <image name="bloom" width="220" height="130"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
         <image name="design_patterns" width="140" height="175"/>
+        <image name="eldercare" width="220" height="142"/>
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="java" width="143" height="189"/>
         <image name="profile" width="130" height="130"/>

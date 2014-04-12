@@ -29,7 +29,6 @@
 	// Init and start our timing updating
 	[self initDateForBirthday];
     [self updateDate];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:ANIMATION_DURATION_LONG target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -48,6 +47,8 @@
 			}];
         }];
 	}
+	
+	self.timer = [NSTimer scheduledTimerWithTimeInterval:ANIMATION_DURATION_LONG target:self selector:@selector(updateDate) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
