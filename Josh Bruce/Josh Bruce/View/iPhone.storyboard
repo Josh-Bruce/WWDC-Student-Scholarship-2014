@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="fBL-hU-1LR">
-                                        <rect key="frame" x="0.0" y="0.0" width="1600" height="568"/>
+                                        <rect key="frame" x="0.0" y="568" width="1600" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="chF-0G-M8a">
@@ -1398,6 +1398,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="delegate" destination="Y91-jb-hwl" id="xkx-qc-azU"/>
                                     <outletCollection property="gestureRecognizers" destination="rlw-Yh-Gqe" appends="YES" id="9NG-pI-nq0"/>
                                 </connections>
                             </scrollView>
