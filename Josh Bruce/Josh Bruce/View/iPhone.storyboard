@@ -1271,8 +1271,8 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="ac0-dN-b4S" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" id="ac0-dN-b4S" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Integrated Project" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jGK-0w-65m">
@@ -1282,7 +1282,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SUI-53-GSG">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="251" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Josh's integrated project really put everything he has learnt into practise. This brought databases, websites, mobile and desktop clients all together, communication through a central API.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1298,6 +1298,10 @@
                                                             <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="sj5-zM-RNa"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="integrated" id="gQ5-gp-B3t">
+                                                        <rect key="frame" x="43" y="58" width="175" height="185"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1308,8 +1312,8 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="6p1-Es-nXO" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" id="6p1-Es-nXO" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Database Development" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LAV-iD-fhH">
@@ -1319,7 +1323,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SHr-CY-wHj">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="236" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Database development was one of Josh's best modules. Learning and fully understanding relational databases. Normalising the data to ensure data integrity and prevent redundancy.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1335,6 +1339,10 @@
                                                             <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="6VC-sD-SPI"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sql" id="Vf9-kb-2Yl">
+                                                        <rect key="frame" x="30" y="69" width="200" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1345,8 +1353,8 @@
                                         <rect key="frame" x="1280" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="pBb-5B-1gJ" customClass="RoundedRect">
-                                                <rect key="frame" x="30" y="50" width="260" height="425"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" id="pBb-5B-1gJ" customClass="RoundedRect">
+                                                <rect key="frame" x="30" y="-150" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alogorithm Design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VjG-cf-Jot">
@@ -1356,7 +1364,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tnT-2h-sYs">
-                                                        <rect key="frame" x="20" y="227" width="220" height="150"/>
+                                                        <rect key="frame" x="20" y="235" width="220" height="150"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Alogorithm design was a fundamental part of Josh's course. Learning how basic algorithsm such as searching and linked list worked beneath their underlyind data structures.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1372,6 +1380,10 @@
                                                             <action selector="speakCurrentViewText:" destination="Y91-jb-hwl" eventType="touchUpInside" id="fL6-Br-jxO"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code" id="ZPU-V6-Dwa">
+                                                        <rect key="frame" x="66" y="81" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1906,9 +1918,11 @@
         <image name="audio_large" width="128" height="128"/>
         <image name="bloom" width="220" height="130"/>
         <image name="blured_dark.jpg" width="1280" height="960"/>
+        <image name="code" width="128" height="128"/>
         <image name="design_patterns" width="140" height="175"/>
         <image name="eldercare" width="220" height="142"/>
         <image name="horizontal_swipe" width="128" height="64"/>
+        <image name="integrated" width="175" height="185"/>
         <image name="java" width="143" height="189"/>
         <image name="profile" width="130" height="130"/>
         <image name="referenceit" width="150" height="150"/>
