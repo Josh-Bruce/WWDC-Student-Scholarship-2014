@@ -974,6 +974,10 @@
                                                             <action selector="speakCurrentViewText:" destination="eLd-ss-GfK" eventType="touchUpInside" id="aHc-5Z-ySa"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="referenceit" id="Xal-49-jJg">
+                                                        <rect key="frame" x="55" y="64" width="150" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -1899,6 +1903,7 @@
         <image name="horizontal_swipe" width="128" height="64"/>
         <image name="java" width="143" height="189"/>
         <image name="profile" width="130" height="130"/>
+        <image name="referenceit" width="150" height="150"/>
         <image name="salesx" width="220" height="56"/>
         <image name="salesx_seo" width="220" height="171"/>
         <image name="sql" width="200" height="150"/>
