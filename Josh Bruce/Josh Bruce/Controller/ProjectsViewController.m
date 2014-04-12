@@ -68,6 +68,13 @@
 			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
 			self.labelText = self.seoLabelText;
 			break;
+		case 960:
+			// Set the utterance string
+			self.utteranceString = self.eldercareLabelText.text;
+			// Speak
+			[self.speechSynthesizer speakUtterance:[self setUpSpeechWithString:self.utteranceString]];
+			self.labelText = self.eldercareLabelText;
+			break;
 	}
 }
 
@@ -91,6 +98,12 @@
 			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
 			self.seoView.layer.position = newPosition;
 			self.seoView.alpha = ALPHA_FINISH;
+        }];
+	} else if (scrollView.contentOffset.x == 960 && self.eldercareView.alpha != ALPHA_FINISH) {
+        [UIView animateWithDuration:ANIMATION_DURATION_LONG animations:^{
+			CGPoint newPosition = CGPointMake(WELCOME_FINISH_X, WELCOME_FINISH_Y);
+			self.eldercareView.layer.position = newPosition;
+			self.eldercareView.alpha = ALPHA_FINISH;
         }];
 	}
     

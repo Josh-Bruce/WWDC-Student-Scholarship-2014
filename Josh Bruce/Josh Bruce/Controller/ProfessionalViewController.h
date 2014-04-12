@@ -22,5 +22,6 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *salesxView;
 @property (weak, nonatomic) IBOutlet UILabel *salesxLabelText;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
+@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

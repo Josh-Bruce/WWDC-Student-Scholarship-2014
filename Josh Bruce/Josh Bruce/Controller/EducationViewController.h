@@ -24,6 +24,6 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *algorithmDesignView;
 @property (weak, nonatomic) IBOutlet UILabel *algorithmDesignLabelText;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
-
+@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

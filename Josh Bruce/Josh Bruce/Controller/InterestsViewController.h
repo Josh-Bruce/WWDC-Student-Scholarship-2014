@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *programmingTextLabel;
 @property (weak, nonatomic) IBOutlet RoundedRect *appleView;
 @property (weak, nonatomic) IBOutlet UILabel *appleTextLabel;
+@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

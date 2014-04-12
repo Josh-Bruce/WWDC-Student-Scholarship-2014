@@ -947,7 +947,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" id="Utl-ND-lLQ" customClass="RoundedRect">
+                                            <view alpha="0.0" contentMode="scaleToFill" id="Utl-ND-lLQ" customClass="RoundedRect">
                                                 <rect key="frame" x="30" y="50" width="260" height="425"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -1100,6 +1100,9 @@
                                                         <state key="normal" image="audio">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="speakCurrentViewText:" destination="eLd-ss-GfK" eventType="touchUpInside" id="ITL-99-hhS"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eldercare" id="Dgq-hz-tlA">
                                                         <rect key="frame" x="20" y="67" width="220" height="143"/>
@@ -1132,6 +1135,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="eldercareLabelText" destination="nvC-qE-fnM" id="baL-eT-EAf"/>
+                        <outlet property="eldercareView" destination="3Tn-kg-18c" id="QBW-nQ-pHp"/>
                         <outlet property="propertyImage" destination="qBg-PK-lU5" id="0ky-o6-w9b"/>
                         <outlet property="propertyLabelText" destination="r1y-li-ELe" id="tQo-7i-KbR"/>
                         <outlet property="propertyView" destination="nht-VW-ZhL" id="aoJ-6X-ryK"/>

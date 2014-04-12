@@ -43,6 +43,8 @@
 
 - (IBAction)speakCurrentViewText:(UIButton *)sender
 {
+	self.speaking = YES;
+
 	// Depending on the current part of the scroll view, speak if the users wants it
 	switch ((int)self.scrollView.contentOffset.x) {
 		case 0:
@@ -103,6 +105,11 @@
 			self.salesxView.layer.position = newPosition;
 			self.salesxView.alpha = ALPHA_FINISH;
         }];
+    }
+	
+	// If the AVSynthesizer is still speaking and we scroll, stop on the next word
+    if (self.isSpeaking) {
+        [self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
     }
 }
 

@@ -31,5 +31,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *hours;
 @property (weak, nonatomic) IBOutlet UILabel *minutes;
 @property (weak, nonatomic) IBOutlet UILabel *seconds;
+@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

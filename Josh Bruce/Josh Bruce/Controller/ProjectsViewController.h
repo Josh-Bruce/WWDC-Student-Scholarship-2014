@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *seoView;
 @property (weak, nonatomic) IBOutlet UIImageView *propertyImage;
 @property (weak, nonatomic) IBOutlet UILabel *seoLabelText;
+@property (weak, nonatomic) IBOutlet RoundedRect *eldercareView;
+@property (weak, nonatomic) IBOutlet UILabel *eldercareLabelText;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
 @property (nonatomic, getter = isSpeaking) BOOL speaking;
 
