@@ -431,8 +431,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="DKG-Ec-iYo" appends="YES" id="wSJ-ys-ThN"/>
+                            <outletCollection property="gestureRecognizers" destination="e7g-nz-krQ" appends="YES" id="WI3-Ti-0fi"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -460,6 +462,11 @@
                         <action selector="showActionMenu:" destination="wFY-PN-0oy" id="ofT-Ua-N1n"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="e7g-nz-krQ">
+                    <connections>
+                        <segue destination="I3h-P3-8oX" kind="modal" identifier="interestsToAboutMe" modalTransitionStyle="crossDissolve" id="rPY-UJ-AJB"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1198" y="2454"/>
         </scene>
@@ -847,6 +854,7 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="vmi-0G-wUA" appends="YES" id="R1n-UT-OK0"/>
                             <outletCollection property="gestureRecognizers" destination="hhG-Kn-x2l" appends="YES" id="vvY-Zf-Ziz"/>
+                            <outletCollection property="gestureRecognizers" destination="Gr2-YA-BTt" appends="YES" id="9aS-aw-GeO"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -883,6 +891,11 @@
                         <action selector="showActionMenu:" destination="I3h-P3-8oX" id="xiC-Mk-1Ln"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Gr2-YA-BTt">
+                    <connections>
+                        <segue destination="eLd-ss-GfK" kind="modal" identifier="aboutMeToProjects" modalTransitionStyle="crossDissolve" id="NOT-ff-3D2"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1198" y="-926"/>
         </scene>
@@ -1127,8 +1140,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="fio-P8-NRQ" appends="YES" id="qbd-68-aCs"/>
+                            <outletCollection property="gestureRecognizers" destination="gSq-hj-YJr" appends="YES" id="YmS-O2-teq"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1157,6 +1172,11 @@
                 <swipeGestureRecognizer direction="up" id="pGU-3y-mqy">
                     <connections>
                         <segue destination="raa-0F-EVS" kind="unwind" identifier="unwindProjects" unwindAction="unwindFromSwipeUpGesture:" id="W6z-bY-Grc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="gSq-hj-YJr">
+                    <connections>
+                        <segue destination="Y91-jb-hwl" kind="modal" identifier="projectsToEducation" modalTransitionStyle="crossDissolve" id="nAs-8N-vje"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1404,8 +1424,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hE2-BH-zz0" appends="YES" id="YlJ-vn-760"/>
+                            <outletCollection property="gestureRecognizers" destination="VZu-gW-ebt" appends="YES" id="ABN-5l-71S"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1436,6 +1458,11 @@
                 <swipeGestureRecognizer direction="up" id="rlw-Yh-Gqe">
                     <connections>
                         <segue destination="Wvf-Jl-4oH" kind="unwind" identifier="unwindEducation" unwindAction="unwindFromSwipeUpGesture:" id="w5J-ZL-3aQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="VZu-gW-ebt">
+                    <connections>
+                        <segue destination="WhN-dz-ako" kind="modal" identifier="educationToProfessional" modalTransitionStyle="crossDissolve" id="luk-M1-s7n"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1642,8 +1669,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="GWg-ey-2mh" appends="YES" id="VaY-6m-iD2"/>
+                            <outletCollection property="gestureRecognizers" destination="C7J-c4-f5U" appends="YES" id="0l4-SP-zA9"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1671,6 +1700,11 @@
                 <swipeGestureRecognizer direction="up" id="cfr-mt-5wd">
                     <connections>
                         <segue destination="71u-ct-ub3" kind="unwind" identifier="unwindTechnicalSkills" unwindAction="unwindFromSwipeUpGesture:" id="cnY-vh-2Tl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="C7J-c4-f5U">
+                    <connections>
+                        <segue destination="wFY-PN-0oy" kind="modal" identifier="technicalSkillsToInterests" modalTransitionStyle="crossDissolve" id="cZu-RT-sxe"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1877,8 +1911,10 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="OlJ-KE-iG4" appends="YES" id="1Nm-SZ-lum"/>
+                            <outletCollection property="gestureRecognizers" destination="uAN-cr-bKE" appends="YES" id="bYS-e4-dGC"/>
                         </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1907,6 +1943,11 @@
                 <swipeGestureRecognizer direction="up" id="jBw-H3-XZ1">
                     <connections>
                         <segue destination="3j1-8f-T8c" kind="unwind" identifier="unwindProfessional" unwindAction="unwindFromSwipeUpGesture:" id="W7F-ov-jnr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="uAN-cr-bKE">
+                    <connections>
+                        <segue destination="Odr-ka-R8G" kind="modal" identifier="professionalToTechnicalSkills" modalTransitionStyle="crossDissolve" id="AQw-nK-Ek2"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1946,4 +1987,12 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NOT-ff-3D2"/>
+        <segue reference="rPY-UJ-AJB"/>
+        <segue reference="cZu-RT-sxe"/>
+        <segue reference="AQw-nK-Ek2"/>
+        <segue reference="luk-M1-s7n"/>
+        <segue reference="nAs-8N-vje"/>
+    </inferredMetricsTieBreakers>
 </document>
