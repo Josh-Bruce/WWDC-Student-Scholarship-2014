@@ -464,7 +464,7 @@
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="e7g-nz-krQ">
                     <connections>
-                        <segue destination="I3h-P3-8oX" kind="modal" identifier="interestsToAboutMe" modalTransitionStyle="crossDissolve" id="rPY-UJ-AJB"/>
+                        <segue destination="58u-H0-a2t" kind="unwind" identifier="unwindBackToAboutMe" unwindAction="unwindFromResume:" id="bfF-KI-2We"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1988,11 +1988,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="NOT-ff-3D2"/>
-        <segue reference="rPY-UJ-AJB"/>
         <segue reference="cZu-RT-sxe"/>
         <segue reference="AQw-nK-Ek2"/>
         <segue reference="luk-M1-s7n"/>
         <segue reference="nAs-8N-vje"/>
+        <segue reference="NOT-ff-3D2"/>
     </inferredMetricsTieBreakers>
 </document>
