@@ -22,6 +22,5 @@
 @property (weak, nonatomic) IBOutlet RoundedRect *eldercareView;
 @property (weak, nonatomic) IBOutlet UILabel *eldercareLabelText;
 @property (weak, nonatomic) IBOutlet UILabel *swipeToContinue;
-@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

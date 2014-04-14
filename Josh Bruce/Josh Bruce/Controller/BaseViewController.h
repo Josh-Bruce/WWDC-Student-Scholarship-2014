@@ -39,6 +39,7 @@
 @property (strong, nonatomic) AVSpeechSynthesizer *speechSynthesizer;
 @property (weak, nonatomic) NSString *utteranceString;
 @property (weak, nonatomic) UILabel *labelText;
+@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 - (AVSpeechUtterance *)setUpSpeechWithString:(NSString *)utteranceString;
 

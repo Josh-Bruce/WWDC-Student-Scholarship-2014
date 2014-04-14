@@ -21,6 +21,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *webLabelText;
 @property (weak, nonatomic) IBOutlet RoundedRect *sqlView;
 @property (weak, nonatomic) IBOutlet UILabel *sqlLabelText;
-@property (nonatomic, getter = isSpeaking) BOOL speaking;
 
 @end

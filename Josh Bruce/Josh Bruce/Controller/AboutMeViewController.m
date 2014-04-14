@@ -57,6 +57,11 @@
 	
 	// Invalidate the timer once we leave the view
 	[self.timer invalidate];
+	
+	// If we are speaking, stop at next word
+	if (self.isSpeaking) {
+		[self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+	}
 }
 
 - (void)initDateForBirthday

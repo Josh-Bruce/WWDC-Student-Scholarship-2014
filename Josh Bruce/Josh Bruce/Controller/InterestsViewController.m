@@ -37,6 +37,16 @@
 	}
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+	
+	// If we are speaking, stop at next word
+	if (self.isSpeaking) {
+		[self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+	}
+}
+
 - (IBAction)speakCurrentViewText:(UIButton *)sender
 {
 	self.speaking = YES;
