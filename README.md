@@ -1,4 +1,4 @@
-WWDC Student Scholarship 2014
+WWDC Student Scholarship 2014 - ACCEPTED
 =============================
 
 Apple WWDC 2014 Student Scholarship iOS Application
